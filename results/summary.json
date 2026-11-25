@@ -1,0 +1,477 @@
+{
+ "accuracy": {
+  "qwen38-27b|language|nothink": {
+   "agreement": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 25,
+    "n": 28,
+    "pct": 89.3
+   },
+   "numerals": {
+    "correct": 3,
+    "n": 4,
+    "pct": 75.0
+   },
+   "prepositions": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "construct_state": {
+    "correct": 1,
+    "n": 2,
+    "pct": 50.0
+   },
+   "verb_forms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "homographs": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "roots": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "idioms": {
+    "correct": 3,
+    "n": 4,
+    "pct": 75.0
+   },
+   "spelling": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   }
+  },
+  "qwen38-flash-next|language|nothink": {
+   "numerals": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 27,
+    "n": 28,
+    "pct": 96.4
+   },
+   "agreement": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "construct_state": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "prepositions": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "verb_forms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "roots": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "homographs": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "idioms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "spelling": {
+    "correct": 1,
+    "n": 2,
+    "pct": 50.0
+   }
+  },
+  "qwen38-27b|language|think": {
+   "agreement": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 27,
+    "n": 28,
+    "pct": 96.4
+   },
+   "numerals": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "prepositions": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "verb_forms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "construct_state": {
+    "correct": 1,
+    "n": 2,
+    "pct": 50.0
+   },
+   "homographs": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "roots": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "idioms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "spelling": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   }
+  },
+  "qwen38-flash-next|language|think": {
+   "numerals": {
+    "correct": 3,
+    "n": 4,
+    "pct": 75.0
+   },
+   "ALL": {
+    "correct": 27,
+    "n": 28,
+    "pct": 96.4
+   },
+   "agreement": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "construct_state": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "prepositions": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "verb_forms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "roots": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "homographs": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "idioms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "spelling": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   }
+  },
+  "qwen38-27b|reasoning|think": {
+   "math_he": {
+    "correct": 12,
+    "n": 12,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 29,
+    "n": 36,
+    "pct": 80.6
+   },
+   "include_logic": {
+    "correct": 6,
+    "n": 12,
+    "pct": 50.0
+   },
+   "include_driving": {
+    "correct": 5,
+    "n": 6,
+    "pct": 83.3
+   },
+   "gmmlu_stem": {
+    "correct": 6,
+    "n": 6,
+    "pct": 100.0
+   }
+  },
+  "qwen38-flash-next|reasoning|think": {
+   "math_he": {
+    "correct": 12,
+    "n": 12,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 28,
+    "n": 36,
+    "pct": 77.8
+   },
+   "include_logic": {
+    "correct": 5,
+    "n": 12,
+    "pct": 41.7
+   },
+   "gmmlu_stem": {
+    "correct": 6,
+    "n": 6,
+    "pct": 100.0
+   },
+   "include_driving": {
+    "correct": 5,
+    "n": 6,
+    "pct": 83.3
+   }
+  }
+ },
+ "paired": {
+  "language|nothink": {
+   "n": 28,
+   "only_qwen38-27b": 1,
+   "only_qwen38-flash-next": 3,
+   "both": 24,
+   "neither": 0,
+   "sign_p": 0.625
+  },
+  "language|think": {
+   "n": 28,
+   "only_qwen38-27b": 1,
+   "only_qwen38-flash-next": 1,
+   "both": 26,
+   "neither": 0,
+   "sign_p": 1.0
+  },
+  "reasoning|think": {
+   "n": 36,
+   "only_qwen38-27b": 1,
+   "only_qwen38-flash-next": 0,
+   "both": 28,
+   "neither": 7,
+   "sign_p": 1.0
+  }
+ },
+ "thinking": {
+  "qwen38-27b|language|nothink": {
+   "n": 28,
+   "median_tokens": 165.5,
+   "p90_tokens": 797,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 45.3,
+   "decode_tok_s": 6.2
+  },
+  "qwen38-flash-next|language|nothink": {
+   "n": 28,
+   "median_tokens": 299.5,
+   "p90_tokens": 383,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 26.4,
+   "decode_tok_s": 10.8
+  },
+  "qwen38-27b|language|think": {
+   "n": 28,
+   "median_tokens": 404.0,
+   "p90_tokens": 943,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 80.9,
+   "decode_tok_s": 6.6,
+   "thinking_script": {
+    "hebrew": 0.162,
+    "latin": 0.838,
+    "cjk": 0.0
+   },
+   "thinking_mostly_hebrew": 0,
+   "thinking_n": 28
+  },
+  "qwen38-flash-next|language|think": {
+   "n": 28,
+   "median_tokens": 434.5,
+   "p90_tokens": 871,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 45.4,
+   "decode_tok_s": 11.6,
+   "thinking_script": {
+    "hebrew": 0.147,
+    "latin": 0.853,
+    "cjk": 0.0
+   },
+   "thinking_mostly_hebrew": 0,
+   "thinking_n": 28
+  },
+  "qwen38-27b|reasoning|think": {
+   "n": 36,
+   "median_tokens": 711.0,
+   "p90_tokens": 2109,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 183.4,
+   "decode_tok_s": 5.5,
+   "thinking_script": {
+    "hebrew": 0.046,
+    "latin": 0.954,
+    "cjk": 0.0
+   },
+   "thinking_mostly_hebrew": 0,
+   "thinking_n": 36
+  },
+  "qwen38-flash-next|reasoning|think": {
+   "n": 36,
+   "median_tokens": 729.0,
+   "p90_tokens": 1712,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 103.3,
+   "decode_tok_s": 11.5,
+   "thinking_script": {
+    "hebrew": 0.044,
+    "latin": 0.956,
+    "cjk": 0.0
+   },
+   "thinking_mostly_hebrew": 0,
+   "thinking_n": 36
+  },
+  "qwen38-27b|writing|nothink": {
+   "n": 16,
+   "median_tokens": 469.5,
+   "p90_tokens": 1132,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 74.9,
+   "decode_tok_s": 6.5
+  },
+  "qwen38-flash-next|writing|nothink": {
+   "n": 16,
+   "median_tokens": 391.5,
+   "p90_tokens": 1362,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 48.8,
+   "decode_tok_s": 11.0
+  }
+ },
+ "purity": {
+  "qwen38-27b|language|nothink": {
+   "n": 28,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [
+    "lang-03"
+   ],
+   "latin_words": [
+    "lang-14: Shivi Shivi"
+   ]
+  },
+  "qwen38-flash-next|language|nothink": {
+   "n": 28,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": [
+    "lang-20: Barber"
+   ]
+  },
+  "qwen38-27b|language|think": {
+   "n": 28,
+   "cjk": [
+    "lang-11"
+   ],
+   "cyrillic": [],
+   "arabic": [
+    "lang-02",
+    "lang-19",
+    "lang-12"
+   ],
+   "latin_words": [
+    "lang-15: past person singular pattern",
+    "lang-20: barber"
+   ]
+  },
+  "qwen38-flash-next|language|think": {
+   "n": 28,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": []
+  },
+  "qwen38-27b|reasoning|think": {
+   "n": 36,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": []
+  },
+  "qwen38-flash-next|reasoning|think": {
+   "n": 36,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": []
+  },
+  "qwen38-27b|writing|nothink": {
+   "n": 15,
+   "cjk": [
+    "open_he-11"
+   ],
+   "cyrillic": [],
+   "arabic": [
+    "open_he-2",
+    "open_he-8"
+   ],
+   "latin_words": [
+    "open_he-11: burnout Python JavaScript",
+    "open_he-2: Mix"
+   ]
+  },
+  "qwen38-flash-next|writing|nothink": {
+   "n": 15,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": [
+    "open_he-2: Fixed Rate Variable Floating Rate"
+   ]
+  }
+ }
+}

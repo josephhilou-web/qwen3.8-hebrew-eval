@@ -1,0 +1,66 @@
+{
+ "open_he-0": {
+  "X": "qwen38-27b",
+  "Y": "qwen38-flash-next"
+ },
+ "open_he-10": {
+  "X": "qwen38-27b",
+  "Y": "qwen38-flash-next"
+ },
+ "open_he-7": {
+  "X": "qwen38-27b",
+  "Y": "qwen38-flash-next"
+ },
+ "open_he-1": {
+  "X": "qwen38-flash-next",
+  "Y": "qwen38-27b"
+ },
+ "open_he-11": {
+  "X": "qwen38-27b",
+  "Y": "qwen38-flash-next"
+ },
+ "open_he-2": {
+  "X": "qwen38-flash-next",
+  "Y": "qwen38-27b"
+ },
+ "open_he-5": {
+  "X": "qwen38-flash-next",
+  "Y": "qwen38-27b"
+ },
+ "open_he-4": {
+  "X": "qwen38-flash-next",
+  "Y": "qwen38-27b"
+ },
+ "open_he-6": {
+  "X": "qwen38-27b",
+  "Y": "qwen38-flash-next"
+ },
+ "open_he-9": {
+  "X": "qwen38-flash-next",
+  "Y": "qwen38-27b"
+ },
+ "open_he-8": {
+  "X": "qwen38-flash-next",
+  "Y": "qwen38-27b"
+ },
+ "open_he-3": {
+  "X": "qwen38-27b",
+  "Y": "qwen38-flash-next"
+ },
+ "write-translate_he_en": {
+  "X": "qwen38-27b",
+  "Y": "qwen38-flash-next"
+ },
+ "write-summary": {
+  "X": "qwen38-27b",
+  "Y": "qwen38-flash-next"
+ },
+ "write-register": {
+  "X": "qwen38-flash-next",
+  "Y": "qwen38-27b"
+ },
+ "write-niqqud": {
+  "X": "qwen38-flash-next",
+  "Y": "qwen38-27b"
+ }
+}
