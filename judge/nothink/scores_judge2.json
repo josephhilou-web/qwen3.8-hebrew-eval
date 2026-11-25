@@ -1,0 +1,1294 @@
+[
+ {
+  "task": "open_he-0",
+  "A": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "כל צבע בונה \"גלים\" של אור",
+     "fix": "כל צבע נע בגלים משלו"
+    },
+    {
+     "type": "other",
+     "text": "הם קלים לעבור מכשולים",
+     "fix": "קל להם לעבור מכשולים"
+    },
+    {
+     "type": "foreign_word",
+     "text": "עכשYLE השמש שולחת",
+     "fix": "עכשיו, כשהשמש שולחת"
+    },
+    {
+     "type": "spelling",
+     "text": "האטמוספירה",
+     "fix": "האטמוספרה"
+    },
+    {
+     "type": "agreement",
+     "text": "השמיים הופכים לאדום",
+     "fix": "השמיים הופכים לאדומים"
+    },
+    {
+     "type": "other",
+     "text": "ומצבעים את השמיים",
+     "fix": "וצובעים את השמיים"
+    }
+   ],
+   "fluency": 3,
+   "task": 4
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "spelling",
+     "text": "בוא נדמין",
+     "fix": "בוא נדמיין"
+    },
+    {
+     "type": "spelling",
+     "text": "אוהבים \"לצחק\" עם האור",
+     "fix": "אוהבים \"לשחק\" עם האור"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "הם מעלים אותו לכל הכיוונים",
+     "fix": "הם מפזרים אותו לכל הכיוונים"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "הם מעלים יותר את הצבעים הקצרים",
+     "fix": "הם מפזרים יותר את הצבעים הקצרים"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "גם הסגול מועלה הרבה",
+     "fix": "גם הסגול מתפזר הרבה"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "כדור פינג-פונג שנשבור על הרצפה",
+     "fix": "כדור פינג-פונג שנזרוק על הרצפה"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "ומוטס לכל מיני כיוונים",
+     "fix": "ועף לכל מיני כיוונים"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "האור עובר דרך אוויר קצר",
+     "fix": "האור עובר דרך מעט אוויר"
+    },
+    {
+     "type": "invented_word",
+     "text": "הכחול נפוזר לכל הכיוונים",
+     "fix": "הכחול מתפזר לכל הכיוונים"
+    },
+    {
+     "type": "invented_word",
+     "text": "הכחול נפוזר ומחליף מקום",
+     "fix": "הכחול מתפזר ונעלם בדרך"
+    }
+   ],
+   "fluency": 2,
+   "task": 4
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "agreement",
+     "text": "היי! דמייני שהשמש",
+     "fix": "היי! דמיין שהשמש (הפנייה עוברת בהמשך ל\"דמיינו\")"
+    },
+    {
+     "type": "other",
+     "text": "מערבולת של כל הצבעים הקשת",
+     "fix": "מערבולת של כל צבעי הקשת"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "השמש נמצאת זוויתית כל כך נמוך",
+     "fix": "השמש נמצאת כל כך נמוך"
+    },
+    {
+     "type": "spelling",
+     "text": "האטמוספירה",
+     "fix": "האטמוספרה"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "גלידה תפוזית",
+     "fix": "גלידת תפוזים"
+    }
+   ],
+   "fluency": 4,
+   "task": 4
+  },
+  "rank": [
+   "C",
+   "A",
+   "B"
+  ],
+  "best": "C",
+  "why": "C is the most natural and child-friendly; A has a Latin-letter glitch and several slips; B's physics is right but it keeps using wrong verbs (מעלים, נפוזר)."
+ },
+ {
+  "task": "open_he-10",
+  "A": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "נקודת העומק בעולם",
+     "fix": "הנקודה הנמוכה בעולם"
+    },
+    {
+     "type": "invented_word",
+     "text": "שמשונו",
+     "fix": "שמשו"
+    }
+   ],
+   "fluency": 3,
+   "task": 1
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "בנשימות רגעים נעלים",
+     "fix": "ברגעים נעלים"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "בעומק האדמה העמוקה",
+     "fix": "בעומק האדמה"
+    },
+    {
+     "type": "invented_word",
+     "text": "בין עולם מלוח ונושאה",
+     "fix": "המילה \"ונושאה\" חסרת משמעות כאן (למשל: \"בין עולם מלוח לנשמה\")"
+    }
+   ],
+   "fluency": 2,
+   "task": 2
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "agreement",
+     "text": "הַגּוּף נִשְׁאֶת",
+     "fix": "הַגּוּף נִשָּׂא"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "בְּחֵן שֶׁל פֶּלֶג",
+     "fix": "צירוף חסר משמעות; למשל \"בְּשֶׁקֶט שֶׁל פֶּלֶא\""
+    }
+   ],
+   "fluency": 3,
+   "task": 1
+  },
+  "rank": [
+   "B",
+   "A",
+   "C"
+  ],
+  "best": "B",
+  "why": "None really rhymes; B at least has weak end rhymes, A is coherent but unrhymed, and C is unrhymed and calls the Dead Sea 'sweet'."
+ },
+ {
+  "task": "open_he-7",
+  "A": {
+   "errors": [
+    {
+     "type": "other",
+     "text": "אינן מתורגמות ליפול",
+     "fix": "אינן מתורגמות לירידה"
+    },
+    {
+     "type": "invented_word",
+     "text": "בתוצרתיות",
+     "fix": "בפריון"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "עובדים מנוחה ומרוצים יותר",
+     "fix": "עובדים נינוחים ומרוצים יותר"
+    },
+    {
+     "type": "preposition_or_collocation",
+     "text": "מפיקים תפקוד גבוה יותר",
+     "fix": "מתפקדים טוב יותר"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "בשל מחלה או כישלון",
+     "fix": "בשל מחלה או שחיקה"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "השבת החמישי המשותפת",
+     "fix": "יום החופש הנוסף"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "מעבר לטווח הארוך",
+     "fix": "בטווח הארוך"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "להתמודד עם מומחי העולם",
+     "fix": "להתחרות במדינות העולם"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "הטענות נגד טוענות",
+     "fix": "המתנגדים טוענים"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "הפסקה יומית אחת נוספת",
+     "fix": "יום חופש נוסף"
+    }
+   ],
+   "fluency": 2,
+   "task": 3
+  },
+  "B": {
+   "errors": [],
+   "fluency": 5,
+   "task": 4
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "foreign_word",
+     "text": "עובדים rested (נחים)",
+     "fix": "עובדים נינוחים"
+    },
+    {
+     "type": "foreign_word",
+     "text": "שיעורי שחיקה מתק advancing",
+     "fix": "שיעורי שחיקה גבוהים"
+    },
+    {
+     "type": "preposition_or_collocation",
+     "text": "הטלת שבוע עבודה קצר על פני המשק",
+     "fix": "הטלת שבוע עבודה קצר על המשק"
+    },
+    {
+     "type": "other",
+     "text": "לספוג קיצור בשכר או לעומס עבודה",
+     "fix": "לספוג קיצור בשכר או עומס עבודה"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "במדינה המצוידת תמידית באתגרים",
+     "fix": "במדינה המתמודדת תמיד עם אתגרים"
+    }
+   ],
+   "fluency": 3,
+   "task": 4
+  },
+  "rank": [
+   "B",
+   "C",
+   "A"
+  ],
+  "best": "B",
+  "why": "B is clean, persuasive native prose (though its pro paragraph is short of 120 words); C has English words in the Hebrew text; A is full of broken phrasing (ליפול בתוצרתיות, עובדים מנוחה)."
+ },
+ {
+  "task": "open_he-1",
+  "A": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "נושא: דחיפות",
+     "fix": "הנדון: דחוף"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "הושבתה ללא פעולה כבר שבועיים ברציפות",
+     "fix": "מושבתת כבר שבועיים"
+    },
+    {
+     "type": "other",
+     "text": "סובלים מקושי ניידות והסתמכות מוחלטת על המעלית",
+     "fix": "סובלים מקשיי ניידות ותלויים לחלוטין במעלית"
+    },
+    {
+     "type": "agreement",
+     "text": "לצורך התניידות היומיומית",
+     "fix": "לצורך ההתניידות היומיומית"
+    }
+   ],
+   "fluency": 3,
+   "task": 5
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "spelling",
+     "text": "בבנייןנו",
+     "fix": "בבנייננו"
+    },
+    {
+     "type": "other",
+     "text": "המתגוררים בבניין, עבורם חוסר היכולת",
+     "fix": "המתגוררים בבניין, שעבורם חוסר היכולת"
+    }
+   ],
+   "fluency": 4,
+   "task": 5
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "שלום רב לוועד הבית",
+     "fix": "לכבוד ועד הבית, שלום רב"
+    },
+    {
+     "type": "other",
+     "text": "המתקשים מאוד בניידותם וללא מעלית עובדת",
+     "fix": "המתקשים מאוד בניידות ללא מעלית עובדת"
+    },
+    {
+     "type": "preposition_or_collocation",
+     "text": "אודה לעדכון מהיר",
+     "fix": "אודה על עדכון מהיר"
+    }
+   ],
+   "fluency": 4,
+   "task": 5
+  },
+  "rank": [
+   "B",
+   "C",
+   "A"
+  ],
+  "best": "B",
+  "why": "B is the most polished formal letter (date, subject line, request for an update); C is good with small slips; A's phrasing is clumsy (הושבתה ללא פעולה, סובלים מ... הסתמכות)."
+ },
+ {
+  "task": "open_he-11",
+  "A": {
+   "errors": [
+    {
+     "type": "invented_word",
+     "text": "מדעי המחדרה היא עבודה אינטלקטואלית",
+     "fix": "מדעי המחשב הם תחום אינטלקטואלי"
+    },
+    {
+     "type": "invented_word",
+     "text": "מדעי המחדרה מציעה",
+     "fix": "מדעי המחשב מציעים"
+    },
+    {
+     "type": "agreement",
+     "text": "מדעי המחדרה מציעה",
+     "fix": "מציעים"
+    },
+    {
+     "type": "invented_word",
+     "text": "מדעי המחדרה מציעים פוטנציאל",
+     "fix": "מדעי המחשב מציעים פוטנציאל"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "מרגיש מסופק יותר",
+     "fix": "מרגיש מרוצה יותר / חש סיפוק רב יותר"
+    },
+    {
+     "type": "agreement",
+     "text": "סיעוד היא מקצוע של \"אדמה\"",
+     "fix": "סיעוד הוא מקצוע"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "צמיחה קרייריסטית",
+     "fix": "התקדמות מקצועית"
+    },
+    {
+     "type": "agreement",
+     "text": "יכולה לתת תשובה חד-משמעית",
+     "fix": "יכול לתת תשובה חד-משמעית (הנושא: ניסיון)"
+    }
+   ],
+   "fluency": 3,
+   "task": 5
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "other",
+     "text": "שני מסלולים קריירה",
+     "fix": "שני מסלולי קריירה"
+    },
+    {
+     "type": "foreign_word",
+     "text": "לאדם另",
+     "fix": "לאדם אחר"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "עומד/ת במשפט שבועי של 8-12 שעות",
+     "fix": "עומד/ת במשמרת של 8–12 שעות"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "החלפת חמצנים",
+     "fix": "החלפת חבישות"
+    },
+    {
+     "type": "other",
+     "text": "עבודה ישיבה ממושכת",
+     "fix": "עבודה בישיבה ממושכת"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "תמנע התקפה משברים (burnout)",
+     "fix": "תמנע שחיקה (burnout)"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "פתרון תעלות לוגיות או בניית קשרים אנושיים",
+     "fix": "פתרון חידות לוגיות או בניית קשרים אנושיים"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "ה\"פרס\" הוא פתרון תעלות לוגיות",
+     "fix": "ה\"פרס\" הוא פתרון חידות לוגיות"
+    },
+    {
+     "type": "spelling",
+     "text": "שהכייתה לך את הראש",
+     "fix": "שהכתה לך את הראש (או: ששברה לך את הראש)"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "כי הרגשת אותם",
+     "fix": "כי הבנת אותם / היית קשוב/ה להם"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "קר, ביטוח ומתיש רגשית",
+     "fix": "קר, מנוכר ומתיש רגשית"
+    },
+    {
+     "type": "agreement",
+     "text": "איזו איזון",
+     "fix": "איזה איזון"
+    },
+    {
+     "type": "invented_word",
+     "text": "\"בטחות\"",
+     "fix": "\"ביטחון\""
+    },
+    {
+     "type": "agreement",
+     "text": "שעות לא שגרתיים",
+     "fix": "שעות לא שגרתיות"
+    },
+    {
+     "type": "other",
+     "text": "פערים שכר עצומים",
+     "fix": "פערי שכר עצומים"
+    },
+    {
+     "type": "foreign_word",
+     "text": "להobby שלך",
+     "fix": "לתחביב שלך"
+    },
+    {
+     "type": "preposition_or_collocation",
+     "text": "שקשה עליהם במיוחד",
+     "fix": "שקשה להם במיוחד"
+    }
+   ],
+   "fluency": 2,
+   "task": 3
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "מרזולוציה של בעיות מופשטות",
+     "fix": "מפתרון בעיות מופשטות"
+    },
+    {
+     "type": "invented_word",
+     "text": "עמידות נפשית וסטריות",
+     "fix": "עמידות נפשית ועמידות בלחץ"
+    }
+   ],
+   "fluency": 4,
+   "task": 4
+  },
+  "rank": [
+   "C",
+   "A",
+   "B"
+  ],
+  "best": "C",
+  "why": "C asks three sensible questions in mostly natural Hebrew; A's content is the strongest but it writes 'מדעי המחדרה' three times; B is riddled with wrong words and a Chinese character."
+ },
+ {
+  "task": "open_he-2",
+  "A": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "להפוך את ההלוואה לבלתי אפשרית לעמידה",
+     "fix": "להפוך את ההחזרים לנטל שקשה לעמוד בו"
+    },
+    {
+     "type": "spelling",
+     "text": "במשוק",
+     "fix": "במשק"
+    },
+    {
+     "type": "spelling",
+     "text": "כדי להנות",
+     "fix": "כדי ליהנות"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "התקציב המשפחתי צמוד",
+     "fix": "התקציב המשפחתי הדוק"
+    }
+   ],
+   "fluency": 4,
+   "task": 3
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "spelling",
+     "text": "אתה מעדיף וודאות",
+     "fix": "אתה מעדיף ודאות"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "וסך הכללת ההלוואה",
+     "fix": "וסך עלות ההלוואה"
+    }
+   ],
+   "fluency": 5,
+   "task": 5
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "preposition_or_collocation",
+     "text": "כמה תשלום חודשי תעשו",
+     "fix": "כמה תשלמו"
+    },
+    {
+     "type": "foreign_word",
+     "text": "ריבית שנائية",
+     "fix": "ריבית שנתית"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "התקציב המנוצל",
+     "fix": "התקציב"
+    },
+    {
+     "type": "spelling",
+     "text": "חסכון של 300 ₪",
+     "fix": "חיסכון של 300 ₪"
+    },
+    {
+     "type": "preposition_or_collocation",
+     "text": "כשאתם חוסכים מפני סיכונים",
+     "fix": "כשאתם נמנעים מסיכונים"
+    },
+    {
+     "type": "other",
+     "text": "שווה \"לקפוא\" אותה",
+     "fix": "שווה \"להקפיא\" אותה"
+    },
+    {
+     "type": "other",
+     "text": "כשמתוכננים תזרים מזומנים קשיח",
+     "fix": "כשיש לכם תזרים מזומנים קשיח"
+    },
+    {
+     "type": "other",
+     "text": "ולא תהיינו מופתעים",
+     "fix": "ולא תהיו מופתעים"
+    },
+    {
+     "type": "spelling",
+     "text": "להנות מהירידה",
+     "fix": "ליהנות מהירידה"
+    },
+    {
+     "type": "spelling",
+     "text": "(\"בופר\")",
+     "fix": "(\"באפר\")"
+    },
+    {
+     "type": "other",
+     "text": "אם גם אם התשלום יעלה",
+     "fix": "אם גם כשהתשלום יעלה"
+    },
+    {
+     "type": "other",
+     "text": "או מקבלת ירושה",
+     "fix": "או קבלת ירושה"
+    },
+    {
+     "type": "agreement",
+     "text": "באחד מהאפשרויות",
+     "fix": "באחת מהאפשרויות"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "צירוף ריביות",
+     "fix": "תמהיל ריביות"
+    },
+    {
+     "type": "spelling",
+     "text": "להנות מירידת ריבית",
+     "fix": "ליהנות מירידת ריבית"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "רוב המשקיעים הפרטיים",
+     "fix": "רוב הלווים הפרטיים"
+    }
+   ],
+   "fluency": 3,
+   "task": 4
+  },
+  "rank": [
+   "B",
+   "A",
+   "C"
+  ],
+  "best": "B",
+  "why": "B gives correct worked monthly payments in near-flawless Hebrew; A is clean but its 'numerical examples' compute nothing; C has good numbers but very many language errors, including Arabic letters."
+ },
+ {
+  "task": "open_he-5",
+  "A": {
+   "errors": [
+    {
+     "type": "invented_word",
+     "text": "פסידות כפולה",
+     "fix": "הפסד כפול"
+    },
+    {
+     "type": "spelling",
+     "text": "בוא, נסע יחד ליער",
+     "fix": "בוא, ניסע יחד ליער"
+    },
+    {
+     "type": "spelling",
+     "text": "לא השג רווח",
+     "fix": "לא השיג רווח"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "הסכנה שבסכנות מיותרות",
+     "fix": "הסכנה שבנטילת סיכונים מיותרים"
+    },
+    {
+     "type": "agreement",
+     "text": "בהשקעה מסוכנת הזו",
+     "fix": "בהשקעה המסוכנת הזו"
+    },
+    {
+     "type": "spelling",
+     "text": "בתמורה לויתור",
+     "fix": "בתמורה לוויתור"
+    }
+   ],
+   "fluency": 3,
+   "task": 1
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "אין גם דובים וגם יער",
+     "fix": "אין לא דובים ולא יער"
+    },
+    {
+     "type": "other",
+     "text": "מתחת לכל הכרית",
+     "fix": "מתחת לכל כרית"
+    },
+    {
+     "type": "other",
+     "text": "יצאנו עם **לא דובים ולא יער**",
+     "fix": "ולא מצאנו כלום (מבנה שבור)"
+    }
+   ],
+   "fluency": 4,
+   "task": 2
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "spelling",
+     "text": "שהתשובה שהקבל",
+     "fix": "שהתשובה שקיבל"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "כמעין \"צ'יפ\" הומוריסטי",
+     "fix": "כמעין עקיצה הומוריסטית"
+    },
+    {
+     "type": "agreement",
+     "text": "שהדובר נשארה",
+     "fix": "שהדובר נשאר"
+    },
+    {
+     "type": "spelling",
+     "text": "שההסבר שהקבל",
+     "fix": "שההסבר שקיבל"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "היה גורף וחלק",
+     "fix": "היה כללי ועמום"
+    },
+    {
+     "type": "invented_word",
+     "text": "אחרי שתהיות",
+     "fix": "אחרי שעתיים"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "צפופה ומשפטית",
+     "fix": "צפופה ומסובכת"
+    }
+   ],
+   "fluency": 2,
+   "task": 1
+  },
+  "rank": [
+   "B",
+   "A",
+   "C"
+  ],
+  "best": "B",
+  "why": "All three get the meaning and origin wrong (it means a claim with no basis at all, from the Talmud's discussion of Elisha's bears); B's 'nothing at all' is closest and its Hebrew is cleanest, A invents a parable, C invents 'confusion' and writes badly."
+ },
+ {
+  "task": "open_he-4",
+  "A": {
+   "errors": [],
+   "fluency": 5,
+   "task": 4
+  },
+  "B": {
+   "errors": [],
+   "fluency": 5,
+   "task": 5
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "הפגישה הוזזה למועד השבוע הבא",
+     "fix": "הפגישה נדחתה לשבוע הבא"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "לפני שנציג אותם בלוח המנהלים",
+     "fix": "לפני שנציג אותם בפני הדירקטוריון"
+    }
+   ],
+   "fluency": 3,
+   "task": 3
+  },
+  "rank": [
+   "B",
+   "A",
+   "C"
+  ],
+  "best": "B",
+  "why": "B's options are idiomatic and render 'board' correctly as דירקטוריון; A is a clean, natural translation but turns the board into הנהלת החברה; C calques 'board' as לוח המנהלים."
+ },
+ {
+  "task": "open_he-6",
+  "A": {
+   "errors": [
+    {
+     "type": "agreement",
+     "text": "יש שתי מצבים",
+     "fix": "יש שני מצבים"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "עשית משהו רע במיוחד",
+     "fix": "עשית משהו בכוונה"
+    },
+    {
+     "type": "unnatural_or_literal",
+     "text": "או השארת דבר חשוב שלא לעשות",
+     "fix": "או נמנעת מלעשות משהו חשוב"
+    },
+    {
+     "type": "spelling",
+     "text": "אם שקרת כשחתמת",
+     "fix": "אם שיקרת כשחתמת"
+    },
+    {
+     "type": "other",
+     "text": "כשהחתמת על הביטוח",
+     "fix": "כשחתמת על הביטוח"
+    },
+    {
+     "type": "spelling",
+     "text": "אם שקרת לה",
+     "fix": "אם שיקרת לה"
+    }
+   ],
+   "fluency": 3,
+   "task": 4
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "preposition_or_collocation",
+     "text": "בעת שנרשמת לפוליסה",
+     "fix": "כשרכשת את הפוליסה"
+    }
+   ],
+   "fluency": 4,
+   "task": 4
+  },
+  "C": {
+   "errors": [],
+   "fluency": 5,
+   "task": 5
+  },
+  "rank": [
+   "C",
+   "B",
+   "A"
+  ],
+  "best": "C",
+  "why": "C is accurate, plain and error-free with a helpful glossary; B is clear but drops 'omission' and adds 'to yourself or others'; A has several errors (שתי מצבים, שקרת, כשהחתמת)."
+ },
+ {
+  "task": "open_he-9",
+  "A": {
+   "errors": [
+    {
+     "type": "invented_word",
+     "text": "(גזרה קלילה)",
+     "fix": "(גזרת השלמים)"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "| גוף | תואר |",
+     "fix": "| גוף | מין ומספר |"
+    },
+    {
+     "type": "foreign_word",
+     "text": "דומיין",
+     "fix": "הבחנה"
+    },
+    {
+     "type": "invented_word",
+     "text": "בפועלים בגזרת קלילה",
+     "fix": "בפועלים בגזרת השלמים"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "ובתואר \"אתה/את\"",
+     "fix": "ובגופים \"אתה/את\""
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "בתואר \"אתם\" ו-\"אתן\"",
+     "fix": "בגופים \"אתם\" ו\"אתן\""
+    },
+    {
+     "type": "invented_word",
+     "text": "שהפועל אכן בגזרת קלילה",
+     "fix": "שהפועל אכן בגזרת השלמים"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "נבדוק את הצורה במצווה",
+     "fix": "נבדוק את הצורה בציווי"
+    }
+   ],
+   "fluency": 2,
+   "task": 3
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "other",
+     "text": "הנה הטה הפועל",
+     "fix": "הנה הטיית הפועל"
+    }
+   ],
+   "fluency": 4,
+   "task": 5
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "spelling",
+     "text": "הנה הטית הפועל",
+     "fix": "הנה הטיית הפועל"
+    },
+    {
+     "type": "other",
+     "text": "כתַּבְתִּי",
+     "fix": "כָּתַבְתִּי"
+    },
+    {
+     "type": "other",
+     "text": "כתַּבְתִּי",
+     "fix": "כָּתַבְתִּי"
+    }
+   ],
+   "fluency": 4,
+   "task": 3
+  },
+  "rank": [
+   "B",
+   "C",
+   "A"
+  ],
+  "best": "B",
+  "why": "B lists all ten forms correctly and concisely; C mis-vocalizes כתבתי and wrongly says אתם/אתן do not differ; A's table is right but its notes are nonsense (גזרה קלילה, 'כתבתם/כתבתן are written the same')."
+ },
+ {
+  "task": "open_he-8",
+  "A": {
+   "errors": [],
+   "fluency": 5,
+   "task": 5
+  },
+  "B": {
+   "errors": [],
+   "fluency": 5,
+   "task": 5
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "foreign_word",
+     "text": "זהו פازل קלאסי",
+     "fix": "זוהי חידה קלאסית"
+    },
+    {
+     "type": "spelling",
+     "text": "מצאת ההתחלה",
+     "fix": "מצב ההתחלה"
+    },
+    {
+     "type": "spelling",
+     "text": "⬅️ **בד** (B → A)",
+     "fix": "⬅️ **לבד** (B → A)"
+    },
+    {
+     "type": "spelling",
+     "text": "⬅️ **בד** (B → A)",
+     "fix": "⬅️ **לבד** (B → A)"
+    },
+    {
+     "type": "spelling",
+     "text": "הפיתרון מבוסס",
+     "fix": "הפתרון מבוסס"
+    }
+   ],
+   "fluency": 3,
+   "task": 4
+  },
+  "rank": [
+   "A",
+   "B",
+   "C"
+  ],
+  "best": "A",
+  "why": "A and B are both correct and clean; A edges ahead with clearer state tracking and no LaTeX arrow artifacts; C is correct but has Arabic letters, typos and a false claim that the goat harms both others."
+ },
+ {
+  "task": "open_he-3",
+  "A": {
+   "errors": [
+    {
+     "type": "agreement",
+     "text": "הסבר מפורט לכל התיקון שבוצע",
+     "fix": "הסבר מפורט לכל התיקונים שבוצעו"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "דורש עצמי ישיר",
+     "fix": "דורש מושא ישיר"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "המילה \"אם\" היא עזר חיבור",
+     "fix": "המילה \"אם\" היא מילת חיבור"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "כעזר חיבור לעצם",
+     "fix": "כמילת חיבור"
+    },
+    {
+     "type": "agreement",
+     "text": "אפשרות ב' (מומלץ יותר)",
+     "fix": "אפשרות ב' (מומלצת יותר)"
+    }
+   ],
+   "fluency": 3,
+   "task": 2
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "other",
+     "text": "(כיוון שלעבר, לכיוון)",
+     "fix": "(המציינת כיוון)"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "או אפילו זריז יותר",
+     "fix": "או אפילו תמציתי יותר"
+    }
+   ],
+   "fluency": 4,
+   "task": 5
+  },
+  "C": {
+   "errors": [],
+   "fluency": 5,
+   "task": 5
+  },
+  "rank": [
+   "C",
+   "B",
+   "A"
+  ],
+  "best": "C",
+  "why": "B and C both fix אצלי→אליי and אם שהם→אם הם and suggest a smoother rewrite, C with no language slips; A leaves 'שתבוא אצלי' uncorrected and claims 'לא יודע שהם' is a valid alternative."
+ },
+ {
+  "task": "write-translate_he_en",
+  "A": {
+   "errors": [],
+   "fluency": 5,
+   "task": 5
+  },
+  "B": {
+   "errors": [],
+   "fluency": 5,
+   "task": 5
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "and instead filed a complaint",
+     "fix": "and filed a complaint"
+    }
+   ],
+   "fluency": 4,
+   "task": 4
+  },
+  "rank": [
+   "A",
+   "B",
+   "C"
+  ],
+  "best": "A",
+  "why": "A's main option ('refused to give up and took it to the Ombudsman') is the most idiomatic; B is a correct, natural single translation; C adds a stray 'instead' and uses a literal title."
+ },
+ {
+  "task": "write-summary",
+  "A": {
+   "errors": [],
+   "fluency": 5,
+   "task": 5
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "wrong_word_in_context",
+     "text": "ומאפשר לחזק את הכנרת",
+     "fix": "ומאפשר להזרים מים לכנרת"
+    }
+   ],
+   "fluency": 4,
+   "task": 4
+  },
+  "C": {
+   "errors": [],
+   "fluency": 5,
+   "task": 5
+  },
+  "rank": [
+   "C",
+   "A",
+   "B"
+  ],
+  "best": "tie",
+  "why": "A and C are equally accurate, fluent two-sentence summaries; B's 'לחזק את הכנרת' is odd and it drops the reduced dependence on rain and the Kinneret."
+ },
+ {
+  "task": "write-register",
+  "A": {
+   "errors": [
+    {
+     "type": "unnatural_or_literal",
+     "text": "כולם מוזמנים לחלוק ביחד",
+     "fix": "כולם מוזמנים ליהנות ביחד"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "לתורמת המשותפת",
+     "fix": "לשולחן המשותף"
+    },
+    {
+     "type": "spelling",
+     "text": "(שתיה, סלט או חטיפים)",
+     "fix": "(שתייה, סלט או חטיפים)"
+    },
+    {
+     "type": "invented_word",
+     "text": "ממתינים לישראון מידיכם",
+     "fix": "מחכה לאישורי הגעה מכם"
+    }
+   ],
+   "fluency": 2,
+   "task": 3
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "agreement",
+     "text": "תבחר את מה שהכי מתאים לסגנון של הקבוצה שלכם",
+     "fix": "תבחר את מה שהכי מתאים לסגנון של הקבוצה שלך"
+    }
+   ],
+   "fluency": 5,
+   "task": 4
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "spelling",
+     "text": "היי חברה!",
+     "fix": "היי חבר'ה!"
+    },
+    {
+     "type": "agreement",
+     "text": "מזמינים אתכם למנגל אצלי",
+     "fix": "מזמין אתכם למנגל אצלי"
+    },
+    {
+     "type": "spelling",
+     "text": "בואו נפגש",
+     "fix": "בואו ניפגש"
+    }
+   ],
+   "fluency": 4,
+   "task": 5
+  },
+  "rank": [
+   "B",
+   "C",
+   "A"
+  ],
+  "best": "B",
+  "why": "B's messages hit the casual register perfectly, though it gives options instead of one message; C is exactly what was asked but has small slips (חברה, מזמינים...אצלי); A has an invented word (ישראון), omits 'noon' and ends with 'חג שמח'."
+ },
+ {
+  "task": "write-niqqud",
+  "A": {
+   "errors": [
+    {
+     "type": "niqqud",
+     "text": "בַּחֲצֵר",
+     "fix": "בֶּחָצֵר"
+    }
+   ],
+   "fluency": 5,
+   "task": 4
+  },
+  "B": {
+   "errors": [
+    {
+     "type": "niqqud",
+     "text": "הַיְּלָדִים",
+     "fix": "הַיְלָדִים"
+    },
+    {
+     "type": "niqqud",
+     "text": "בַּחָצֵר",
+     "fix": "בֶּחָצֵר"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "השין עם חיריק ושמאל שמאלי",
+     "fix": "השי\"ן שמאלית ועם חיריק"
+    }
+   ],
+   "fluency": 2,
+   "task": 2
+  },
+  "C": {
+   "errors": [
+    {
+     "type": "niqqud",
+     "text": "הַיְּלָדִים",
+     "fix": "הַיְלָדִים"
+    },
+    {
+     "type": "niqqud",
+     "text": "שֶׁחִקּוּ",
+     "fix": "שִׂחֲקוּ"
+    },
+    {
+     "type": "niqqud",
+     "text": "בַּחֲצֵר",
+     "fix": "בֶּחָצֵר"
+    },
+    {
+     "type": "invented_word",
+     "text": "דגש בצירוי החולם המופחת",
+     "fix": "(צירוף חסר משמעות)"
+    },
+    {
+     "type": "wrong_word_in_context",
+     "text": "ההעתיקה (ש)",
+     "fix": "האות ש"
+    },
+    {
+     "type": "spelling",
+     "text": "(ספרה בעבר)",
+     "fix": "(סיפור בעבר)"
+    },
+    {
+     "type": "other",
+     "text": "היינו כותבים \"יִרְדֶּה\"",
+     "fix": "היינו כותבים \"יֵרֵד\""
+    }
+   ],
+   "fluency": 2,
+   "task": 1
+  },
+  "rank": [
+   "A",
+   "B",
+   "C"
+  ],
+  "best": "A",
+  "why": "A is right except בחצר (needs בֶּחָצֵר); B ends with a mostly right sentence after a long, self-contradicting explanation; C mis-vocalizes שיחקו and בחצר and its explanation is gibberish."
+ }
+]

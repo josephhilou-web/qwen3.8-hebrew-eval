@@ -1,0 +1,83 @@
+{
+ "_mode": "nothink",
+ "open_he-0": {
+  "A": "gemma4-26b-a4b",
+  "B": "qwen38-27b",
+  "C": "qwen38-flash-next"
+ },
+ "open_he-10": {
+  "A": "qwen38-flash-next",
+  "B": "qwen38-27b",
+  "C": "gemma4-26b-a4b"
+ },
+ "open_he-7": {
+  "A": "qwen38-27b",
+  "B": "qwen38-flash-next",
+  "C": "gemma4-26b-a4b"
+ },
+ "open_he-1": {
+  "A": "qwen38-27b",
+  "B": "gemma4-26b-a4b",
+  "C": "qwen38-flash-next"
+ },
+ "open_he-11": {
+  "A": "qwen38-flash-next",
+  "B": "qwen38-27b",
+  "C": "gemma4-26b-a4b"
+ },
+ "open_he-2": {
+  "A": "gemma4-26b-a4b",
+  "B": "qwen38-flash-next",
+  "C": "qwen38-27b"
+ },
+ "open_he-5": {
+  "A": "qwen38-flash-next",
+  "B": "gemma4-26b-a4b",
+  "C": "qwen38-27b"
+ },
+ "open_he-4": {
+  "A": "qwen38-flash-next",
+  "B": "gemma4-26b-a4b",
+  "C": "qwen38-27b"
+ },
+ "open_he-6": {
+  "A": "qwen38-27b",
+  "B": "qwen38-flash-next",
+  "C": "gemma4-26b-a4b"
+ },
+ "open_he-9": {
+  "A": "qwen38-27b",
+  "B": "gemma4-26b-a4b",
+  "C": "qwen38-flash-next"
+ },
+ "open_he-8": {
+  "A": "qwen38-flash-next",
+  "B": "gemma4-26b-a4b",
+  "C": "qwen38-27b"
+ },
+ "open_he-3": {
+  "A": "qwen38-27b",
+  "B": "qwen38-flash-next",
+  "C": "gemma4-26b-a4b"
+ },
+ "write-translate_he_en": {
+  "A": "gemma4-26b-a4b",
+  "B": "qwen38-27b",
+  "C": "qwen38-flash-next"
+ },
+ "write-summary": {
+  "A": "qwen38-flash-next",
+  "B": "qwen38-27b",
+  "C": "gemma4-26b-a4b"
+ },
+ "write-register": {
+  "A": "qwen38-27b",
+  "B": "gemma4-26b-a4b",
+  "C": "qwen38-flash-next"
+ },
+ "write-niqqud": {
+  "A": "gemma4-26b-a4b",
+  "B": "qwen38-flash-next",
+  "C": "qwen38-27b"
+ }
+}

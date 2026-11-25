@@ -1,5 +1,57 @@
 {
  "accuracy": {
+  "gemma4-26b-a4b|language|nothink": {
+   "agreement": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 24,
+    "n": 28,
+    "pct": 85.7
+   },
+   "numerals": {
+    "correct": 3,
+    "n": 4,
+    "pct": 75.0
+   },
+   "prepositions": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "construct_state": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "verb_forms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "homographs": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "roots": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "idioms": {
+    "correct": 3,
+    "n": 4,
+    "pct": 75.0
+   },
+   "spelling": {
+    "correct": 0,
+    "n": 2,
+    "pct": 0.0
+   }
+  },
   "qwen38-27b|language|nothink": {
    "agreement": {
     "correct": 4,
@@ -104,6 +156,58 @@
     "pct": 50.0
    }
   },
+  "gemma4-26b-a4b|language|think": {
+   "agreement": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 26,
+    "n": 28,
+    "pct": 92.9
+   },
+   "numerals": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "prepositions": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "verb_forms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "construct_state": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "homographs": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "roots": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "idioms": {
+    "correct": 3,
+    "n": 4,
+    "pct": 75.0
+   },
+   "spelling": {
+    "correct": 1,
+    "n": 2,
+    "pct": 50.0
+   }
+  },
   "qwen38-27b|language|think": {
    "agreement": {
     "correct": 4,
@@ -208,6 +312,189 @@
     "pct": 100.0
    }
   },
+  "gemma4-26b-a4b|language|tuned": {
+   "numerals": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 27,
+    "n": 28,
+    "pct": 96.4
+   },
+   "agreement": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "construct_state": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "prepositions": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "verb_forms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "roots": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "homographs": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "idioms": {
+    "correct": 3,
+    "n": 4,
+    "pct": 75.0
+   },
+   "spelling": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   }
+  },
+  "qwen38-27b|language|tuned": {
+   "agreement": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 26,
+    "n": 28,
+    "pct": 92.9
+   },
+   "numerals": {
+    "correct": 3,
+    "n": 4,
+    "pct": 75.0
+   },
+   "prepositions": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "construct_state": {
+    "correct": 1,
+    "n": 2,
+    "pct": 50.0
+   },
+   "verb_forms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "homographs": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "roots": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "idioms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "spelling": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   }
+  },
+  "qwen38-flash-next|language|tuned": {
+   "numerals": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 28,
+    "n": 28,
+    "pct": 100.0
+   },
+   "agreement": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "construct_state": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "prepositions": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "verb_forms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "roots": {
+    "correct": 3,
+    "n": 3,
+    "pct": 100.0
+   },
+   "homographs": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   },
+   "idioms": {
+    "correct": 4,
+    "n": 4,
+    "pct": 100.0
+   },
+   "spelling": {
+    "correct": 2,
+    "n": 2,
+    "pct": 100.0
+   }
+  },
+  "gemma4-26b-a4b|reasoning|think": {
+   "math_he": {
+    "correct": 12,
+    "n": 12,
+    "pct": 100.0
+   },
+   "ALL": {
+    "correct": 29,
+    "n": 36,
+    "pct": 80.6
+   },
+   "include_logic": {
+    "correct": 7,
+    "n": 12,
+    "pct": 58.3
+   },
+   "gmmlu_stem": {
+    "correct": 6,
+    "n": 6,
+    "pct": 100.0
+   },
+   "include_driving": {
+    "correct": 4,
+    "n": 6,
+    "pct": 66.7
+   }
+  },
   "qwen38-27b|reasoning|think": {
    "math_he": {
     "correct": 12,
@@ -264,32 +551,137 @@
   }
  },
  "paired": {
-  "language|nothink": {
+  "language|nothink|qwen38-27b|qwen38-flash-next": {
+   "a": "qwen38-27b",
+   "b": "qwen38-flash-next",
    "n": 28,
-   "only_qwen38-27b": 1,
-   "only_qwen38-flash-next": 3,
+   "only_a": 1,
+   "only_b": 3,
    "both": 24,
    "neither": 0,
    "sign_p": 0.625
   },
-  "language|think": {
+  "language|nothink|qwen38-27b|gemma4-26b-a4b": {
+   "a": "qwen38-27b",
+   "b": "gemma4-26b-a4b",
    "n": 28,
-   "only_qwen38-27b": 1,
-   "only_qwen38-flash-next": 1,
+   "only_a": 4,
+   "only_b": 3,
+   "both": 21,
+   "neither": 0,
+   "sign_p": 1.0
+  },
+  "language|nothink|qwen38-flash-next|gemma4-26b-a4b": {
+   "a": "qwen38-flash-next",
+   "b": "gemma4-26b-a4b",
+   "n": 28,
+   "only_a": 3,
+   "only_b": 0,
+   "both": 24,
+   "neither": 1,
+   "sign_p": 0.25
+  },
+  "language|think|qwen38-27b|qwen38-flash-next": {
+   "a": "qwen38-27b",
+   "b": "qwen38-flash-next",
+   "n": 28,
+   "only_a": 1,
+   "only_b": 1,
    "both": 26,
    "neither": 0,
    "sign_p": 1.0
   },
-  "reasoning|think": {
+  "language|think|qwen38-27b|gemma4-26b-a4b": {
+   "a": "qwen38-27b",
+   "b": "gemma4-26b-a4b",
+   "n": 28,
+   "only_a": 2,
+   "only_b": 1,
+   "both": 25,
+   "neither": 0,
+   "sign_p": 1.0
+  },
+  "language|think|qwen38-flash-next|gemma4-26b-a4b": {
+   "a": "qwen38-flash-next",
+   "b": "gemma4-26b-a4b",
+   "n": 28,
+   "only_a": 2,
+   "only_b": 1,
+   "both": 25,
+   "neither": 0,
+   "sign_p": 1.0
+  },
+  "language|tuned|qwen38-27b|qwen38-flash-next": {
+   "a": "qwen38-27b",
+   "b": "qwen38-flash-next",
+   "n": 28,
+   "only_a": 0,
+   "only_b": 2,
+   "both": 26,
+   "neither": 0,
+   "sign_p": 0.5
+  },
+  "language|tuned|qwen38-27b|gemma4-26b-a4b": {
+   "a": "qwen38-27b",
+   "b": "gemma4-26b-a4b",
+   "n": 28,
+   "only_a": 1,
+   "only_b": 2,
+   "both": 25,
+   "neither": 0,
+   "sign_p": 1.0
+  },
+  "language|tuned|qwen38-flash-next|gemma4-26b-a4b": {
+   "a": "qwen38-flash-next",
+   "b": "gemma4-26b-a4b",
+   "n": 28,
+   "only_a": 1,
+   "only_b": 0,
+   "both": 27,
+   "neither": 0,
+   "sign_p": 1.0
+  },
+  "reasoning|think|qwen38-27b|qwen38-flash-next": {
+   "a": "qwen38-27b",
+   "b": "qwen38-flash-next",
    "n": 36,
-   "only_qwen38-27b": 1,
-   "only_qwen38-flash-next": 0,
+   "only_a": 1,
+   "only_b": 0,
    "both": 28,
    "neither": 7,
+   "sign_p": 1.0
+  },
+  "reasoning|think|qwen38-27b|gemma4-26b-a4b": {
+   "a": "qwen38-27b",
+   "b": "gemma4-26b-a4b",
+   "n": 36,
+   "only_a": 1,
+   "only_b": 1,
+   "both": 28,
+   "neither": 6,
+   "sign_p": 1.0
+  },
+  "reasoning|think|qwen38-flash-next|gemma4-26b-a4b": {
+   "a": "qwen38-flash-next",
+   "b": "gemma4-26b-a4b",
+   "n": 36,
+   "only_a": 1,
+   "only_b": 2,
+   "both": 27,
+   "neither": 6,
    "sign_p": 1.0
   }
  },
  "thinking": {
+  "gemma4-26b-a4b|language|nothink": {
+   "n": 28,
+   "median_tokens": 122.5,
+   "p90_tokens": 291,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 4.4,
+   "decode_tok_s": 30.0
+  },
   "qwen38-27b|language|nothink": {
    "n": 28,
    "median_tokens": 165.5,
@@ -307,6 +699,22 @@
    "empty_answer": 0,
    "mean_seconds": 26.4,
    "decode_tok_s": 10.8
+  },
+  "gemma4-26b-a4b|language|think": {
+   "n": 28,
+   "median_tokens": 766.0,
+   "p90_tokens": 2056,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 53.3,
+   "decode_tok_s": 24.6,
+   "thinking_script": {
+    "hebrew": 0.243,
+    "latin": 0.757,
+    "cjk": 0.0
+   },
+   "thinking_mostly_hebrew": 0,
+   "thinking_n": 28
   },
   "qwen38-27b|language|think": {
    "n": 28,
@@ -340,6 +748,49 @@
    "thinking_mostly_hebrew": 0,
    "thinking_n": 28
   },
+  "gemma4-26b-a4b|language|tuned": {
+   "n": 28,
+   "median_tokens": 112.0,
+   "p90_tokens": 169,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 2.8,
+   "decode_tok_s": 43.8
+  },
+  "qwen38-27b|language|tuned": {
+   "n": 28,
+   "median_tokens": 140.0,
+   "p90_tokens": 328,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 25.9,
+   "decode_tok_s": 6.1
+  },
+  "qwen38-flash-next|language|tuned": {
+   "n": 28,
+   "median_tokens": 194.5,
+   "p90_tokens": 364,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 17.6,
+   "decode_tok_s": 13.6
+  },
+  "gemma4-26b-a4b|reasoning|think": {
+   "n": 36,
+   "median_tokens": 1717.5,
+   "p90_tokens": 4806,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 661.4,
+   "decode_tok_s": 42.5,
+   "thinking_script": {
+    "hebrew": 0.176,
+    "latin": 0.824,
+    "cjk": 0.0
+   },
+   "thinking_mostly_hebrew": 0,
+   "thinking_n": 36
+  },
   "qwen38-27b|reasoning|think": {
    "n": 36,
    "median_tokens": 711.0,
@@ -372,6 +823,15 @@
    "thinking_mostly_hebrew": 0,
    "thinking_n": 36
   },
+  "gemma4-26b-a4b|writing|nothink": {
+   "n": 16,
+   "median_tokens": 410.0,
+   "p90_tokens": 890,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 15.5,
+   "decode_tok_s": 29.2
+  },
   "qwen38-27b|writing|nothink": {
    "n": 16,
    "median_tokens": 469.5,
@@ -389,9 +849,46 @@
    "empty_answer": 0,
    "mean_seconds": 48.8,
    "decode_tok_s": 11.0
+  },
+  "gemma4-26b-a4b|writing|tuned": {
+   "n": 16,
+   "median_tokens": 362.0,
+   "p90_tokens": 575,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 7.7,
+   "decode_tok_s": 47.0
+  },
+  "qwen38-27b|writing|tuned": {
+   "n": 16,
+   "median_tokens": 144.0,
+   "p90_tokens": 1018,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 56.5,
+   "decode_tok_s": 5.1
+  },
+  "qwen38-flash-next|writing|tuned": {
+   "n": 16,
+   "median_tokens": 210.0,
+   "p90_tokens": 1010,
+   "truncated": 0,
+   "empty_answer": 0,
+   "mean_seconds": 32.8,
+   "decode_tok_s": 14.2
   }
  },
  "purity": {
+  "gemma4-26b-a4b|language|nothink": {
+   "n": 28,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": [
+    "lang-06: leftarrow",
+    "lang-26: Plan Programmatic Content related Plan"
+   ]
+  },
   "qwen38-27b|language|nothink": {
    "n": 28,
    "cjk": [],
@@ -410,6 +907,16 @@
    "arabic": [],
    "latin_words": [
     "lang-20: Barber"
+   ]
+  },
+  "gemma4-26b-a4b|language|think": {
+   "n": 28,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": [
+    "lang-20: Barber",
+    "lang-26: Tokh nit program Takh nit"
    ]
   },
   "qwen38-27b|language|think": {
@@ -435,6 +942,41 @@
    "arabic": [],
    "latin_words": []
   },
+  "gemma4-26b-a4b|language|tuned": {
+   "n": 28,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": [
+    "lang-19: aktif",
+    "lang-20: Border Counter Accountant Book Barber"
+   ]
+  },
+  "qwen38-27b|language|tuned": {
+   "n": 28,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": [
+    "lang-08: alef alef"
+   ]
+  },
+  "qwen38-flash-next|language|tuned": {
+   "n": 28,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": [
+    "lang-20: Barber Hairdresser"
+   ]
+  },
+  "gemma4-26b-a4b|reasoning|think": {
+   "n": 36,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": []
+  },
   "qwen38-27b|reasoning|think": {
    "n": 36,
    "cjk": [],
@@ -448,6 +990,20 @@
    "cyrillic": [],
    "arabic": [],
    "latin_words": []
+  },
+  "gemma4-26b-a4b|writing|nothink": {
+   "n": 15,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": [
+    "open_he-4: Iron out details Pitch Board",
+    "open_he-5: perros gatos",
+    "open_he-7: rested advancing",
+    "open_he-2: Fixed Interest Rate Variable Floating",
+    "open_he-3: leftarrow leftarrow",
+    "open_he-8: leftarrow leftarrow leftarrow leftarrow leftarrow"
+   ]
   },
   "qwen38-27b|writing|nothink": {
    "n": 15,
@@ -465,6 +1021,36 @@
    ]
   },
   "qwen38-flash-next|writing|nothink": {
+   "n": 15,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": [
+    "open_he-2: Fixed Rate Variable Floating Rate"
+   ]
+  },
+  "gemma4-26b-a4b|writing|tuned": {
+   "n": 15,
+   "cjk": [],
+   "cyrillic": [
+    "open_he-5"
+   ],
+   "arabic": [],
+   "latin_words": [
+    "open_he-5: Nito medvedya lesa",
+    "open_he-4: Pushed back Iron out details",
+    "open_he-8: leftarrow rightarrow leftarrow rightarrow leftarrow",
+    "open_he-3: leftarrow leftarrow leftarrow"
+   ]
+  },
+  "qwen38-27b|writing|tuned": {
+   "n": 15,
+   "cjk": [],
+   "cyrillic": [],
+   "arabic": [],
+   "latin_words": []
+  },
+  "qwen38-flash-next|writing|tuned": {
    "n": 15,
    "cjk": [],
    "cyrillic": [],

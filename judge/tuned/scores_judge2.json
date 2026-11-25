@@ -1,0 +1,233 @@
+[
+{"task": "open_he-0",
+ "A": {"errors": [
+   {"type": "agreement", "text": "זה הצבע האדום והכתום", "fix": "אלה הצבעים האדום והכתום"},
+   {"type": "other", "text": "שצבעו את השמיים", "fix": "שצובעים את השמיים"}
+ ], "fluency": 4, "task": 4},
+ "B": {"errors": [
+   {"type": "other", "text": "מכל הצבעים של הקשת הצבעים", "fix": "מכל צבעי הקשת"},
+   {"type": "unnatural_or_literal", "text": "(למשל, דרך האוויר של כל הצד של כדור הארץ)", "fix": "(דרך שכבת אוויר ארוכה הרבה יותר)"},
+   {"type": "unnatural_or_literal", "text": "האור עובר דרך אוויר קצר יותר", "fix": "האור עובר דרך פחות אוויר"},
+   {"type": "unnatural_or_literal", "text": "האור עובר דרך אוויר ארוך יותר", "fix": "האור עובר דרך הרבה יותר אוויר"}
+ ], "fluency": 3, "task": 4},
+ "C": {"errors": [
+   {"type": "unnatural_or_literal", "text": "צרור של קשתות בעלות צבעים שונים", "fix": "תערובת של אור בצבעים שונים"},
+   {"type": "unnatural_or_literal", "text": "האור עובר דרך אוויר קצר", "fix": "האור עובר דרך מעט אוויר"},
+   {"type": "unnatural_or_literal", "text": "האור עובר דרך אוויר ארוך מאוד", "fix": "האור עובר דרך הרבה מאוד אוויר"}
+ ], "fluency": 4, "task": 5},
+ "rank": ["C", "A", "B"],
+ "best": "C",
+ "why": "C is the most complete child-level explanation (even covers why the sky is not violet) with only mild phrasing slips; A is good but has agreement/tense slips; B has broken phrases like 'הקשת הצבעים'."},
+
+{"task": "open_he-10",
+ "A": {"errors": [], "fluency": 4, "task": 2},
+ "B": {"errors": [], "fluency": 4, "task": 2},
+ "C": {"errors": [
+   {"type": "wrong_word_in_context", "text": "עַל שְׂפַת הַמֶּלַח", "fix": "עַל שְׂפַת יַם הַמֶּלַח"},
+   {"type": "unnatural_or_literal", "text": "הַמַּיִם כְּמוֹ מִשְׁקָל שֶׁל כֶּתֶר וְאוֹצָר", "fix": "הַמַּיִם כְּבֵדִים וּמְלוּחִים כְּמוֹ אוֹצָר"},
+   {"type": "other", "text": "בְּלִי כְּאֵב וְלִי פַּחַד", "fix": "בְּלִי כְּאֵב וּבְלִי פַּחַד"}
+ ], "fluency": 3, "task": 2},
+ "rank": ["A", "B", "C"],
+ "best": "A",
+ "why": "None rhymes properly (A and B only repeat the same word as a rhyme, C rhymes one pair); A has the most coherent imagery, B is flat, C has errors and says the body sinks in the Dead Sea."},
+
+{"task": "open_he-7",
+ "A": {"errors": [
+   {"type": "other", "text": "את הפרודוקטיביות העובדים", "fix": "את פרודוקטיביות העובדים"},
+   {"type": "other", "text": "לא רק יגביר את הפרודוקטיביות העובדים, אלא יפחית", "fix": "לא רק יגביר את פרודוקטיביות העובדים, אלא גם יפחית"},
+   {"type": "wrong_word_in_context", "text": "שעשויים לקשות על שמירת רווחיותם", "fix": "שעשויים להתקשות לשמור על רווחיותם"},
+   {"type": "wrong_word_in_context", "text": "עומס עבודה מוגבר בימים הקיימים", "fix": "עומס עבודה מוגבר בימים הנותרים"},
+   {"type": "unnatural_or_literal", "text": "בתעשיות שירותיות", "fix": "בענפי השירותים"}
+ ], "fluency": 3, "task": 3},
+ "B": {"errors": [
+   {"type": "wrong_word_in_context", "text": "יום עבודה נוסף לפנאי", "fix": "יום פנאי נוסף"},
+   {"type": "spelling", "text": "תמשך", "fix": "תמשוך"},
+   {"type": "agreement", "text": "קיימת חשש ממשי", "fix": "קיים חשש ממשי"}
+ ], "fluency": 4, "task": 4},
+ "C": {"errors": [
+   {"type": "wrong_word_in_context", "text": "יום עבודה אחד נוסף של חופש", "fix": "יום חופש נוסף"},
+   {"type": "wrong_word_in_context", "text": "להאריך תורות ללקוחות", "fix": "להאריך את התורים ללקוחות"}
+ ], "fluency": 4, "task": 4},
+ "rank": ["C", "B", "A"],
+ "best": "C",
+ "why": "C is the most polished and persuasive though its 'against' paragraph is not short; B has a gender error and a misspelling; A has several broken constructions and is the shortest."},
+
+{"task": "open_he-1",
+ "A": {"errors": [
+   {"type": "other", "text": "ברצוני להעלות את הנוגע לתקלה", "fix": "ברצוני להעלות את הנושא הנוגע לתקלה"},
+   {"type": "wrong_word_in_context", "text": "הדיירים המבוגרים המגורים בבניין", "fix": "הדיירים המבוגרים המתגוררים בבניין"},
+   {"type": "unnatural_or_literal", "text": "בשביל תנועה יומיומית ובטיחותית", "fix": "לצורך תנועה יומיומית בטוחה"},
+   {"type": "spelling", "text": "התיקום", "fix": "התיקון"}
+ ], "fluency": 2, "task": 3},
+ "B": {"errors": [
+   {"type": "other", "text": "למשך זמן ממושך כה זה", "fix": "למשך זמן כה ממושך"},
+   {"type": "agreement", "text": "זה יוצר קושי משמעותי", "fix": "יוצרת קושי משמעותי"}
+ ], "fluency": 4, "task": 4},
+ "C": {"errors": [], "fluency": 5, "task": 5},
+ "rank": ["C", "B", "A"],
+ "best": "C",
+ "why": "C is a clean, short, properly formatted formal letter; B is good but has a garbled phrase; A has four errors in a very short letter, including the typo 'התיקום'."},
+
+{"task": "open_he-11",
+ "A": {"errors": [
+   {"type": "preposition_or_collocation", "text": "\"לפרוץ\" בעיה טכנית", "fix": "\"לפצח\" בעיה טכנית"}
+ ], "fluency": 5, "task": 5},
+ "B": {"errors": [
+   {"type": "other", "text": "איפה תרגיש \"בית\"", "fix": "איפה תרגיש \"בבית\""},
+   {"type": "unnatural_or_literal", "text": "אי-ודאות תכניתית", "fix": "אי-ודאות טכנית"},
+   {"type": "other", "text": "עשוי להיות לא שיתוף פעולה", "fix": "עשוי שלא לשתף פעולה"},
+   {"type": "unnatural_or_literal", "text": "האם הלחץ הגדול עליך הוא כשהמחשב", "fix": "האם מלחיץ אותך יותר כשהמחשב"},
+   {"type": "unnatural_or_literal", "text": "עבודה יושבת מול מסך", "fix": "עבודה בישיבה מול מסך"}
+ ], "fluency": 3, "task": 5},
+ "C": {"errors": [
+   {"type": "invented_word", "text": "בשני עולמות תוים שונים בתכלית", "fix": "בשני עולמות שונים בתכלית"},
+   {"type": "unnatural_or_literal", "text": "ויכולת לשבת בסטטיות", "fix": "ויכולת לשבת שעות ללא תזוזה"},
+   {"type": "preposition_or_collocation", "text": "כל מקצוע מציב מחיר אחר", "fix": "כל מקצוע גובה מחיר אחר"}
+ ], "fluency": 4, "task": 5},
+ "rank": ["A", "C", "B"],
+ "best": "A",
+ "why": "All three ask good questions; A reads most natively with one collocation slip, C has the non-word 'תוים', B has several broken phrasings."},
+
+{"task": "open_he-2",
+ "A": {"errors": [
+   {"type": "unnatural_or_literal", "text": "התקציב המשפחתי צפוף", "fix": "התקציב המשפחתי דחוק"},
+   {"type": "other", "text": "כך שלא יספיק למדד או לריבית להשפיע", "fix": "כך שהמדד או הריבית לא יספיקו להשפיע"}
+ ], "fluency": 4, "task": 3},
+ "B": {"errors": [
+   {"type": "wrong_word_in_context", "text": "ריבית הריבית (APR)", "fix": "הריבית השנתית האפקטיבית (APR)"}
+ ], "fluency": 4, "task": 4},
+ "C": {"errors": [
+   {"type": "wrong_word_in_context", "text": "(או מובטלת)", "fix": "(להשמיט; 'מובטלת' פירושה חסרת עבודה)"},
+   {"type": "spelling", "text": "לפרעון", "fix": "לפירעון"},
+   {"type": "wrong_word_in_context", "text": "אתה שומר על יציבות", "fix": "חשובה לך יציבות"},
+   {"type": "preposition_or_collocation", "text": "\"ביטוח\" מול עליית ריבית", "fix": "\"ביטוח\" מפני עליית ריבית"}
+ ], "fluency": 3, "task": 3},
+ "rank": ["B", "A", "C"],
+ "best": "B",
+ "why": "B gives real, mostly correct payment calculations and clear guidance; A never computes a payment and conflates CPI indexation with variable rate; C's payments are wrong (4%/10y is about 1,012 not 1,033) and it calls variable rate 'מובטלת'."},
+
+{"task": "open_he-5",
+ "A": {"errors": [], "fluency": 5, "task": 1},
+ "B": {"errors": [], "fluency": 5, "task": 1},
+ "C": {"errors": [
+   {"type": "preposition_or_collocation", "text": "לחזור על דרכו", "fix": "למצוא את דרכו חזרה"},
+   {"type": "unnatural_or_literal", "text": "כבר הייתי **לא דובים ולא יער** – לא הבנתי", "fix": "כבר הייתי אבוד לגמרי – לא הבנתי"},
+   {"type": "other", "text": "אחרי שלב שני", "fix": "אחרי השלב השני"},
+   {"type": "unnatural_or_literal", "text": "הייתי **לא דובים ולא יער**: לא ידעתי", "fix": "הייתי מבולבל לגמרי: לא ידעתי"},
+   {"type": "wrong_word_in_context", "text": "\"אובד ביער\"", "fix": "\"אבוד ביער\""}
+ ], "fluency": 3, "task": 1},
+ "rank": ["A", "B", "C"],
+ "best": "A",
+ "why": "All three get the meaning (a complete fabrication) and the Talmudic origin wrong; A at least points to rabbinic sources though it invents a Mishnah quote, B invents a Russian proverb, C is confused and even claims the idiom is not standard."},
+
+{"task": "open_he-4",
+ "A": {"errors": [], "fluency": 5, "task": 5},
+ "B": {"errors": [], "fluency": 5, "task": 4},
+ "C": {"errors": [
+   {"type": "preposition_or_collocation", "text": "לפני שנציג את ההצעה מול הדירקטוריון", "fix": "לפני שנציג את ההצעה בפני הדירקטוריון"}
+ ], "fluency": 4, "task": 4},
+ "rank": ["A", "B", "C"],
+ "best": "A",
+ "why": "A is a single natural, standard translation; B's options are good but add unrequested commentary; C uses the non-normative 'מול' where the task asked for standard Hebrew."},
+
+{"task": "open_he-6",
+ "A": {"errors": [
+   {"type": "unnatural_or_literal", "text": "החברה לא תשלם את הכספים מהביטוח", "fix": "חברת הביטוח לא תשלם את כספי הביטוח"},
+   {"type": "other", "text": "כשהחתים על הפוליסה", "fix": "כשחתם על הפוליסה"}
+ ], "fluency": 3, "task": 4},
+ "B": {"errors": [], "fluency": 5, "task": 5},
+ "C": {"errors": [], "fluency": 5, "task": 5},
+ "rank": ["B", "C", "A"],
+ "best": "B",
+ "why": "B is the plainest and clearest for a layperson; C is correct but keeps legal words; A uses the wrong binyan 'כשהחתים'."},
+
+{"task": "open_he-9",
+ "A": {"errors": [], "fluency": 5, "task": 5},
+ "B": {"errors": [], "fluency": 5, "task": 5},
+ "C": {"errors": [
+   {"type": "spelling", "text": "הטית", "fix": "הטיית"}
+ ], "fluency": 5, "task": 5},
+ "rank": ["C", "A", "B"],
+ "best": "C",
+ "why": "All conjugations are correct; C's correct niqqud also tells apart כָּתַבְתָּ and כָּתַבְתְּ, despite a minor spelling slip in the intro."},
+
+{"task": "open_he-8",
+ "A": {"errors": [
+   {"type": "spelling", "text": "הסעה ששית", "fix": "הסעה שישית"}
+ ], "fluency": 5, "task": 5},
+ "B": {"errors": [], "fluency": 5, "task": 5},
+ "C": {"errors": [
+   {"type": "wrong_word_in_context", "text": "לבעיית הגלשן הקלאסית", "fix": "לחידה הקלאסית"},
+   {"type": "other", "text": "או שהיא חייבת להיות הצד השני שאליו מגיעים לאחר שהיא הועברה", "fix": "(משפט חסר משמעות; להשמיט)"},
+   {"type": "wrong_word_in_context", "text": "את הזוג הסכין", "fix": "את הזוג המסוכן"},
+   {"type": "wrong_word_in_context", "text": "שני הניגשים תקינים", "fix": "שתי הגישות תקינות"}
+ ], "fluency": 3, "task": 4},
+ "rank": ["A", "B", "C"],
+ "best": "A",
+ "why": "A and B both solve it correctly; A explains why each step is needed, as the task asks; C is correct but garbled in places ('בעיית הגלשן', 'הזוג הסכין')."},
+
+{"task": "open_he-3",
+ "A": {"errors": [
+   {"type": "preposition_or_collocation", "text": "שתבוא אצלי מחר", "fix": "שתבוא אליי מחר"},
+   {"type": "other", "text": "להלן ההסבר לכל התיקון", "fix": "להלן ההסבר לכל תיקון"},
+   {"type": "wrong_word_in_context", "text": "ומקום נקודה או פסיק", "fix": "והצבת נקודה או פסיק"},
+   {"type": "wrong_word_in_context", "text": "שהפרידה בין המשפטים ברורה", "fix": "שההפרדה בין המשפטים ברורה"}
+ ], "fluency": 3, "task": 2},
+ "B": {"errors": [], "fluency": 5, "task": 4},
+ "C": {"errors": [
+   {"type": "unnatural_or_literal", "text": "יש לי הרבה דברים להגיד לך בנוגע אליהם", "fix": "יש לי הרבה דברים לספר לך עליהם"}
+ ], "fluency": 4, "task": 4},
+ "rank": ["B", "C", "A"],
+ "best": "B",
+ "why": "B and C fix all three errors (B's explanations have some wrong grammar terms); A misses 'אצלי' and its own explanation has errors."},
+
+{"task": "write-translate_he_en",
+ "A": {"errors": [
+   {"type": "unnatural_or_literal", "text": "Public Complaints Commissioner", "fix": "Ombudsman"}
+ ], "fluency": 4, "task": 3},
+ "B": {"errors": [], "fluency": 5, "task": 5},
+ "C": {"errors": [
+   {"type": "unnatural_or_literal", "text": "the Public Complaints Commissioner", "fix": "the Ombudsman"}
+ ], "fluency": 4, "task": 4},
+ "rank": ["B", "C", "A"],
+ "best": "B",
+ "why": "B is one natural translation with the idiomatic 'Ombudsman'; C is correct but keeps the literal title; A gives three options with commentary and the literal title."},
+
+{"task": "write-summary",
+ "A": {"errors": [
+   {"type": "other", "text": "את רוב המים לביתיים", "fix": "את רוב המים לשימוש ביתי"}
+ ], "fluency": 3, "task": 4},
+ "B": {"errors": [], "fluency": 5, "task": 5},
+ "C": {"errors": [], "fluency": 5, "task": 5},
+ "rank": ["C", "B", "A"],
+ "best": "C",
+ "why": "B and C are both clean two-sentence summaries; C keeps the precise 'תמלחת' and 'מהמובילות'; A has the broken phrase 'לביתיים'."},
+
+{"task": "write-register",
+ "A": {"errors": [], "fluency": 5, "task": 5},
+ "B": {"errors": [
+   {"type": "wrong_word_in_context", "text": "יוצאים למנגל ביום שישי אצלי", "fix": "עושים מנגל ביום שישי אצלי"}
+ ], "fluency": 4, "task": 3},
+ "C": {"errors": [
+   {"type": "agreement", "text": "מזמינים אתכם למנגל אצלי", "fix": "מזמין אתכם למנגל אצלי"}
+ ], "fluency": 4, "task": 5},
+ "rank": ["A", "C", "B"],
+ "best": "A",
+ "why": "A is a short, light, natural WhatsApp message; C is good but mixes plural 'מזמינים' with 'אצלי'; B gives three options with commentary instead of one message."},
+
+{"task": "write-niqqud",
+ "A": {"errors": [
+   {"type": "niqqud", "text": "בַּחֲצֵר", "fix": "בֶּחָצֵר"}
+ ], "fluency": 4, "task": 3},
+ "B": {"errors": [
+   {"type": "niqqud", "text": "הַיְּלָדִים", "fix": "הַיְלָדִים"}
+ ], "fluency": 4, "task": 4},
+ "C": {"errors": [
+   {"type": "niqqud", "text": "הִילָדִים", "fix": "הַיְלָדִים"},
+   {"type": "niqqud", "text": "שֶׁחִקּוּ", "fix": "שִׂחֲקוּ"},
+   {"type": "niqqud", "text": "בַּחֲצֵר", "fix": "בֶּחָצֵר"}
+ ], "fluency": 2, "task": 1},
+ "rank": ["B", "A", "C"],
+ "best": "B",
+ "why": "B matches the reference except for a superfluous dagesh in the yod; A vocalizes 'בַּחֲצֵר' wrongly; C has three wrong words, including שׁ instead of שׂ in 'שֶׁחִקּוּ'."}
+]

@@ -1,9 +1,15 @@
 """Run one model over one item file in one mode -> results/{name}__{section}__{mode}.jsonl (resumable).
 
-Modes (sampling = Qwen's own recommendation for each mode, identical for both models):
-  think    thinking on, reasoning_effort=medium, temp 1.0, top_p 0.95, top_k 20, min_p 0, presence 0
-  nothink  enable_thinking=False,                temp 0.7, top_p 0.80, top_k 20, min_p 0, presence 1.5
-No system prompt: this measures the models out of the box.
+Modes (think / nothink use the model maker's own recommended sampling, chosen with --sampling):
+  think    thinking on, reasoning_effort=medium (Qwen only; Gemma's template ignores it)
+           qwen:  temp 1.0, top_p 0.95, top_k 20, min_p 0, presence 0
+           gemma: temp 1.0, top_p 0.95, top_k 64, min_p 0, presence 0
+  nothink  enable_thinking=False
+           qwen:  temp 0.7, top_p 0.80, top_k 20, min_p 0, presence 1.5
+           gemma: temp 1.0, top_p 0.95, top_k 64, min_p 0, presence 0
+  tuned    enable_thinking=False, the same for every model: temp 0.3, top_p 0.95, top_k 20, min_p 0.05, presence 0,
+           plus the Hebrew system prompt in system_he.txt (settings that cut Hebrew errors in earlier tests)
+think and nothink have no system prompt: they measure the models out of the box.
 
 Backends:
   mlx     local MLX model through mlx_lm's BatchGenerator (groups of --batch prompts, no slot refill:
@@ -12,6 +18,7 @@ Backends:
 Usage:
   python run.py --backend mlx --model ../../models/mlx/Qwen3.8-27B-8bit --name qwen38-27b --items items/reasoning.jsonl --mode think
   python run.py --backend server --host http://127.0.0.1:8197 --name qwen38-flash-next --items items/reasoning.jsonl --mode think
+  python run.py --backend mlx --model ../../models/mlx/gemma-4-26B-A4B-it-8bit --name gemma4-26b-a4b --sampling gemma ...
 """
 import argparse
 import json
@@ -26,7 +33,10 @@ MODES = {
     "think": dict(temp=1.0, top_p=0.95, top_k=20, min_p=0.0, presence=0.0,
                   kwargs={"enable_thinking": True, "reasoning_effort": "medium"}),
     "nothink": dict(temp=0.7, top_p=0.80, top_k=20, min_p=0.0, presence=1.5, kwargs={"enable_thinking": False}),
+    "tuned": dict(temp=0.3, top_p=0.95, top_k=20, min_p=0.05, presence=0.0, kwargs={"enable_thinking": False},
+                  system=(Path(__file__).parent / "system_he.txt").read_text(encoding="utf-8").strip()),
 }
+GEMMA = dict(temp=1.0, top_p=0.95, top_k=64, min_p=0.0, presence=0.0)  # Google's recommended sampling (both modes)
 
 
 def prompt(it):
@@ -38,12 +48,21 @@ def prompt(it):
     return it["question"]
 
 
+def messages(it, m):
+    sys_msg = [{"role": "system", "content": m["system"]}] if m.get("system") else []
+    return sys_msg + [{"role": "user", "content": prompt(it)}]
+
+
+THINK_TAGS = [("<think>", "</think>"), ("<|channel>thought", "<channel|>")]  # Qwen, Gemma 4
+
+
 def split_think(text):
-    if "</think>" in text:
-        th, ans = text.split("</think>", 1)
-        return th.replace("<think>", "").strip(), ans.strip(), True
-    if "<think>" in text:  # never closed: the whole output was thinking
-        return text.replace("<think>", "").strip(), "", False
+    for op, cl in THINK_TAGS:
+        if cl in text:
+            th, ans = text.split(cl, 1)
+            return th.replace(op, "").strip(), ans.strip(), True
+        if op in text:  # never closed: the whole output was thinking
+            return text.replace(op, "").strip(), "", False
     return "", text.strip(), True
 
 
@@ -53,7 +72,7 @@ def run_server(a, m, jobs):
     def one(it):
         t0 = time.time()
         r = requests.post(f"{a.host}/v1/chat/completions", timeout=7200, json={
-            "messages": [{"role": "user", "content": prompt(it)}], "max_tokens": a.max_tokens,
+            "messages": messages(it, m), "max_tokens": a.max_tokens,
             "temperature": m["temp"], "top_p": m["top_p"], "top_k": m["top_k"], "min_p": m["min_p"],
             "presence_penalty": m["presence"], "chat_template_kwargs": m["kwargs"], "seed": 0}).json()
         if "error" in r:
@@ -83,12 +102,15 @@ def run_mlx(a, m, jobs):
     model, tok = load(a.model)
     sampler = make_sampler(temp=m["temp"], top_p=m["top_p"], top_k=m["top_k"], min_p=m["min_p"])
     procs = make_logits_processors(presence_penalty=m["presence"] or None, presence_context_size=4096)
+    if a.batch == 1:  # one prompt at a time with the standard generator
+        yield from run_mlx_seq(a, m, jobs, model, tok, sampler, procs)
+        return
     for b in range(0, len(jobs), a.batch):
         part = jobs[b: b + a.batch]
         gen = BatchGenerator(model, stop_tokens=[[t] for t in tok.eos_token_ids], sampler=sampler,
                              logits_processors=procs or None, completion_batch_size=a.batch, prefill_batch_size=a.batch)
-        prompts = [tok.apply_chat_template([{"role": "user", "content": prompt(it)}], add_generation_prompt=True,
-                                           tokenize=True, **m["kwargs"]) for it in part]
+        prompts = [tok.apply_chat_template(messages(it, m), add_generation_prompt=True, tokenize=True, **m["kwargs"])
+                   for it in part]
         uids = gen.insert(prompts, [a.max_tokens] * len(prompts))
         meta = {u: (it, p) for u, it, p in zip(uids, part, prompts)}
         toks = {u: [] for u in uids}
@@ -105,9 +127,11 @@ def run_mlx(a, m, jobs):
                 it, p = meta[r.uid]
                 ids = toks.pop(r.uid)
                 text = tok.decode(ids)
-                tail = tok.decode(p[-8:])  # the template opens <think> itself in thinking mode
+                tail = tok.decode(p[-8:])  # Qwen's template opens <think> itself in thinking mode
                 if tail.rfind("<think>") > tail.rfind("</think>") and "<think>" not in text:
                     text = "<think>" + text
+                for x in ["<turn|>", "<eos>"]:  # Gemma end markers, in case one is not a stop token
+                    text = text.split(x)[0] if x in text else text
                 th, ans, _ = split_think(text)
                 el = time.time() - t0
                 yield it, {"answer": ans, "thinking": th, "gen_tokens": len(ids), "seconds": round(el, 1),
@@ -118,19 +142,49 @@ def run_mlx(a, m, jobs):
         mx.clear_cache()
 
 
+def finish(text, prompt_ids, tok):
+    tail = tok.decode(prompt_ids[-8:])  # Qwen's template opens <think> itself in thinking mode
+    if tail.rfind("<think>") > tail.rfind("</think>") and "<think>" not in text:
+        text = "<think>" + text
+    for x in ["<turn|>", "<eos>"]:  # Gemma end markers, in case one is not a stop token
+        text = text.split(x)[0] if x in text else text
+    return split_think(text)
+
+
+def run_mlx_seq(a, m, jobs, model, tok, sampler, procs):
+    """--batch 1: mlx_lm.stream_generate, one prompt at a time. Used for Gemma 4, where the batched generator slowed
+    to under 1 token/s per sequence once answers passed ~2,400 tokens (mlx_lm 0.32.2)."""
+    from mlx_lm import stream_generate
+    for it in jobs:
+        p = tok.apply_chat_template(messages(it, m), add_generation_prompt=True, tokenize=True, **m["kwargs"])
+        ids, fin, t0 = [], None, time.time()
+        for r in stream_generate(model, tok, p, max_tokens=a.max_tokens, sampler=sampler, logits_processors=procs or None):
+            fin = r.finish_reason
+            if fin is None or fin == "length":  # the final "stop" response carries the stop token itself
+                ids.append(int(r.token))
+        th, ans, _ = finish(tok.decode(ids), p, tok)
+        el = time.time() - t0
+        yield it, {"answer": ans, "thinking": th, "gen_tokens": len(ids), "seconds": round(el, 1),
+                   "decode_tok_s": round(len(ids) / max(el, 1e-9), 1), "truncated": fin == "length"}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--backend", choices=["mlx", "server"], required=True)
     ap.add_argument("--model", default="")
     ap.add_argument("--name", required=True)
-    ap.add_argument("--host", default="http://127.0.0.1:8090")
+    ap.add_argument("--host", default="http://127.0.0.1:8197")
     ap.add_argument("--items", required=True)
     ap.add_argument("--mode", choices=list(MODES), required=True)
+    ap.add_argument("--sampling", choices=["qwen", "gemma"], default="qwen",
+                    help="recommended sampling for think/nothink (tuned is the same for all models)")
     ap.add_argument("--max-tokens", type=int, default=16000)
     ap.add_argument("--batch", type=int, default=8)
     ap.add_argument("--parallel", type=int, default=4)
     a = ap.parse_args()
-    m = MODES[a.mode]
+    m = dict(MODES[a.mode])
+    if a.sampling == "gemma" and a.mode != "tuned":
+        m.update(GEMMA)
 
     items = [json.loads(l) for l in open(a.items, encoding="utf-8")]
     section = items[0]["section"]

@@ -1,6 +1,11 @@
 {
+ "mode": "nothink",
  "judges": 2,
- "preference": {
+ "models": [
+  "qwen38-27b",
+  "qwen38-flash-next"
+ ],
+ "first_place": {
   "qwen38-flash-next": 28,
   "qwen38-27b": 4
  },

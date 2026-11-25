@@ -1,0 +1,2440 @@
+{
+ "mode": "nothink",
+ "judges": 2,
+ "models": [
+  "qwen38-27b",
+  "qwen38-flash-next",
+  "gemma4-26b-a4b"
+ ],
+ "first_place": {
+  "gemma4-26b-a4b": 20,
+  "qwen38-flash-next": 9,
+  "tie": 2,
+  "qwen38-27b": 1
+ },
+ "per_model": {
+  "qwen38-27b": {
+   "errors_per_100_words": 3.22,
+   "errors": 212,
+   "words_judged": 6590,
+   "error_types": {
+    "wrong_word_in_context": 59,
+    "spelling": 32,
+    "unnatural_or_literal": 31,
+    "other": 25,
+    "invented_word": 22,
+    "agreement": 17,
+    "preposition_or_collocation": 10,
+    "foreign_word": 10,
+    "niqqud": 6
+   },
+   "fluency_mean": 2.72,
+   "task_mean": 3.16,
+   "mean_rank": 2.84
+  },
+  "qwen38-flash-next": {
+   "errors_per_100_words": 1.22,
+   "errors": 74,
+   "words_judged": 6044,
+   "error_types": {
+    "spelling": 15,
+    "agreement": 12,
+    "unnatural_or_literal": 11,
+    "wrong_word_in_context": 10,
+    "other": 10,
+    "invented_word": 10,
+    "niqqud": 4,
+    "preposition_or_collocation": 2
+   },
+   "fluency_mean": 3.97,
+   "task_mean": 3.88,
+   "mean_rank": 1.75
+  },
+  "gemma4-26b-a4b": {
+   "errors_per_100_words": 0.93,
+   "errors": 51,
+   "words_judged": 5478,
+   "error_types": {
+    "other": 13,
+    "unnatural_or_literal": 10,
+    "spelling": 7,
+    "foreign_word": 6,
+    "agreement": 5,
+    "wrong_word_in_context": 5,
+    "invented_word": 2,
+    "niqqud": 2,
+    "preposition_or_collocation": 1
+   },
+   "fluency_mean": 4.25,
+   "task_mean": 4.12,
+   "mean_rank": 1.41
+  }
+ },
+ "error_examples": {
+  "gemma4-26b-a4b": [
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "foreign_word",
+    "text": "עכשYLE השמש שולחת",
+    "fix": "עכשיו, כשהשמש שולחת"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "כל צבע בונה \"גלים\" של אור",
+    "fix": "כל צבע נע בגלים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "הם קלים לעבור מכשולים",
+    "fix": "קל להם לעבור מכשולים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "ומצבעים את השמיים",
+    "fix": "וצובעים את השמיים"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "הַגּוּף נִשְׁאֶת",
+    "fix": "הַגּוּף נִשָּׂא"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "foreign_word",
+    "text": "עובדים rested (נחים)",
+    "fix": "עובדים רעננים"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "foreign_word",
+    "text": "שיעורי שחיקה מתק advancing",
+    "fix": "שיעורי שחיקה גבוהים"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "לספוג קיצור בשכר או לעומס עבודה",
+    "fix": "לספוג קיצור בשכר או עומס עבודה"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "במדינה המצוידת תמידית באתגרים",
+    "fix": "במדינה הניצבת תמיד בפני אתגרים"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "בבנייןנו",
+    "fix": "בבנייננו"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "עבורם חוסר היכולת להשתמש במעלית",
+    "fix": "שעבורם חוסר היכולת להשתמש במעלית"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "מרזולוציה של בעיות מופשטות",
+    "fix": "מפתרון של בעיות מופשטות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "עמידות נפשית וסטריות",
+    "fix": "עמידות נפשית ועמידות בלחץ"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "במעברים של בית חולים",
+    "fix": "במסדרונות של בית חולים"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "להפוך את ההלוואה לבלתי אפשרית לעמידה",
+    "fix": "להפוך את ההלוואה לכזו שקשה לעמוד בה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "הריבית במשוק",
+    "fix": "הריבית במשק"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "התקציב המשפחתי צמוד",
+    "fix": "התקציב המשפחתי הדוק"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "כדי להנות",
+    "fix": "כדי ליהנות"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "כאשר אומרים שאין גם דובים וגם יער",
+    "fix": "כאשר אומרים שאין לא דובים ולא יער"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "מתחת לכל הכרית",
+    "fix": "מתחת לכל כרית"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "יצאנו עם לא דובים ולא יער",
+    "fix": "יצאנו בידיים ריקות"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "הנה הטה הפועל",
+    "fix": "הנה הטיית הפועל"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "תבחר את מה שהכי מתאים לסגנון של הקבוצה שלכם",
+    "fix": "תבחר את מה שהכי מתאים לסגנון של הקבוצה שלך"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "niqqud",
+    "text": "בַּחֲצֵר",
+    "fix": "בֶּחָצֵר"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "כל צבע בונה \"גלים\" של אור",
+    "fix": "כל צבע נע בגלים משלו"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "הם קלים לעבור מכשולים",
+    "fix": "קל להם לעבור מכשולים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "foreign_word",
+    "text": "עכשYLE השמש שולחת",
+    "fix": "עכשיו, כשהשמש שולחת"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "האטמוספירה",
+    "fix": "האטמוספרה"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "השמיים הופכים לאדום",
+    "fix": "השמיים הופכים לאדומים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "ומצבעים את השמיים",
+    "fix": "וצובעים את השמיים"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "הַגּוּף נִשְׁאֶת",
+    "fix": "הַגּוּף נִשָּׂא"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "בְּחֵן שֶׁל פֶּלֶג",
+    "fix": "צירוף חסר משמעות; למשל \"בְּשֶׁקֶט שֶׁל פֶּלֶא\""
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "foreign_word",
+    "text": "עובדים rested (נחים)",
+    "fix": "עובדים נינוחים"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "foreign_word",
+    "text": "שיעורי שחיקה מתק advancing",
+    "fix": "שיעורי שחיקה גבוהים"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "preposition_or_collocation",
+    "text": "הטלת שבוע עבודה קצר על פני המשק",
+    "fix": "הטלת שבוע עבודה קצר על המשק"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "לספוג קיצור בשכר או לעומס עבודה",
+    "fix": "לספוג קיצור בשכר או עומס עבודה"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "במדינה המצוידת תמידית באתגרים",
+    "fix": "במדינה המתמודדת תמיד עם אתגרים"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "בבנייןנו",
+    "fix": "בבנייננו"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "המתגוררים בבניין, עבורם חוסר היכולת",
+    "fix": "המתגוררים בבניין, שעבורם חוסר היכולת"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "מרזולוציה של בעיות מופשטות",
+    "fix": "מפתרון בעיות מופשטות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "עמידות נפשית וסטריות",
+    "fix": "עמידות נפשית ועמידות בלחץ"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "להפוך את ההלוואה לבלתי אפשרית לעמידה",
+    "fix": "להפוך את ההחזרים לנטל שקשה לעמוד בו"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "במשוק",
+    "fix": "במשק"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "כדי להנות",
+    "fix": "כדי ליהנות"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "התקציב המשפחתי צמוד",
+    "fix": "התקציב המשפחתי הדוק"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "אין גם דובים וגם יער",
+    "fix": "אין לא דובים ולא יער"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "מתחת לכל הכרית",
+    "fix": "מתחת לכל כרית"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "יצאנו עם **לא דובים ולא יער**",
+    "fix": "ולא מצאנו כלום (מבנה שבור)"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "הנה הטה הפועל",
+    "fix": "הנה הטיית הפועל"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "תבחר את מה שהכי מתאים לסגנון של הקבוצה שלכם",
+    "fix": "תבחר את מה שהכי מתאים לסגנון של הקבוצה שלך"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "niqqud",
+    "text": "בַּחֲצֵר",
+    "fix": "בֶּחָצֵר"
+   }
+  ],
+  "qwen38-27b": [
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "בוא נדמין",
+    "fix": "בוא נדמיין"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "אוהבים \"לצחק\" עם האור",
+    "fix": "אוהבים \"לשחק\" עם האור"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "הם מעלים אותו לכל הכיוונים",
+    "fix": "הם מפזרים אותו לכל הכיוונים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "כדור פינג-פונג שנשבור על הרצפה",
+    "fix": "כדור פינג-פונג שנזרוק על הרצפה"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "ומוטס לכל מיני כיוונים",
+    "fix": "וקופץ לכל מיני כיוונים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "הם מעלים יותר את הצבעים הקצרים",
+    "fix": "הם מפזרים יותר את הצבעים הקצרים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "גם הסגול מועלה הרבה",
+    "fix": "גם הסגול מתפזר הרבה"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "הצבעים שהכי קשים לפזר",
+    "fix": "הצבעים שהכי קשה לפזר"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "האור עובר דרך אוויר קצר",
+    "fix": "האור עובר מסלול קצר באוויר"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "הכחול נפוזר לכל הכיוונים",
+    "fix": "הכחול מתפזר לכל הכיוונים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "האור עובר דרך אוויר ארוך",
+    "fix": "האור עובר מסלול ארוך באוויר"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "הכחול נפוזר ומחליף מקום",
+    "fix": "הכחול מתפזר"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "בנשימות רגעים נעלים",
+    "fix": "ברגעים נעלים של נשימה"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "בעומק האדמה העמוקה",
+    "fix": "בעומק האדמה"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "בין עולם מלוח ונושאה",
+    "fix": "בין עולם מלוח לנשמה"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "אינן מתורגמות ליפול בתוצרתיות",
+    "fix": "אינן מתורגמות לירידה בפריון"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "תוצרתיות",
+    "fix": "פריון"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "עובדים מנוחה ומרוצים יותר",
+    "fix": "עובדים רעננים ומרוצים יותר"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "מפיקים תפקוד גבוה יותר",
+    "fix": "מתפקדים טוב יותר"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "בשל מחלה או כישלון",
+    "fix": "בשל מחלה או שחיקה"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "השבת החמישי המשותפת",
+    "fix": "יום החופש הנוסף"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "preposition_or_collocation",
+    "text": "מעבר לטווח הארוך",
+    "fix": "בטווח הארוך"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "להתמודד עם מומחי העולם",
+    "fix": "להתחרות בכלכלות העולם"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "הטענות נגד טוענות",
+    "fix": "המתנגדים טוענים"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "הפסקה יומית אחת נוספת",
+    "fix": "יום חופש נוסף"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge1",
+    "type": "preposition_or_collocation",
+    "text": "ולדחוף את העלויות לעסקים קטנים",
+    "fix": "ולגלגל את העלויות על עסקים קטנים"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "נושא: דחיפות – תיקון מעלית",
+    "fix": "הנדון: דחוף – תיקון מעלית"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "הושבתה ללא פעולה",
+    "fix": "מושבתת"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "סובלים מקושי ניידות והסתמכות מוחלטת על המעלית",
+    "fix": "סובלים מקושי בניידות ותלויים לחלוטין במעלית"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "לצורך התניידות היומיומית",
+    "fix": "לצורך ההתניידות היומיומית"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "שני מסלולים קריירה",
+    "fix": "שני מסלולי קריירה"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "foreign_word",
+    "text": "למגע הקרוב ביותר לאדם另",
+    "fix": "למגע הקרוב ביותר באדם אחר"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "עומד/ת במשפט שבועי של 8-12 שעות",
+    "fix": "עומד/ת במשמרת של 8-12 שעות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "החלפת חמצנים",
+    "fix": "החלפת חבישות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "preposition_or_collocation",
+    "text": "מדעי המחשב הוא עבודה ישיבה ממושכת",
+    "fix": "מדעי המחשב הם עבודה בישיבה ממושכת"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "תמנע התקפה משברים (burnout)",
+    "fix": "תמנע שחיקה (burnout)"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "פתרון תעלות לוגיות או בניית קשרים אנושיים",
+    "fix": "פתרון תעלומות לוגיות או בניית קשרים אנושיים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "שהכייתה לך את הראש",
+    "fix": "ששברה לך את הראש"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "כי הרגשת אותם",
+    "fix": "כי הבנת אותם"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "ה\"פרס\" הוא פתרון תעלות לוגיות",
+    "fix": "ה\"פרס\" הוא פתרון תעלומות לוגיות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "מדעי המחשב עלול להרגיש קר",
+    "fix": "מדעי המחשב עלולים להרגיש קרים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "קר, ביטוח ומתיש רגשית",
+    "fix": "קר, טכני ומתיש רגשית"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "איזו איזון",
+    "fix": "איזה איזון"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "בין \"בטחות\" ל\"סיכון\"",
+    "fix": "בין \"ביטחון\" ל\"סיכון\""
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "שעות לא שגרתיים",
+    "fix": "שעות לא שגרתיות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "עם פערים שכר עצומים",
+    "fix": "עם פערי שכר עצומים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "foreign_word",
+    "text": "להobby שלך",
+    "fix": "לתחביב שלך"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "preposition_or_collocation",
+    "text": "עבור למדעי המחשב:",
+    "fix": "לגבי מדעי המחשב:"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "preposition_or_collocation",
+    "text": "עבור לסיעוד:",
+    "fix": "לגבי סיעוד:"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "preposition_or_collocation",
+    "text": "שקשה עליהם במיוחד",
+    "fix": "שקשה להם במיוחד"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "כמה תשלום חודשי תעשו",
+    "fix": "כמה תשלמו"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "לשערי הריבית במסחר",
+    "fix": "לשערי הריבית בשוק"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "foreign_word",
+    "text": "ריבית שנائية",
+    "fix": "ריבית שנתית"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "לתכנן את התקציב המנוצל עד הפרוטה",
+    "fix": "לתכנן את התקציב עד הפרוטה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "חסכון של 300 ₪",
+    "fix": "חיסכון של 300 ₪"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "כשאתם חוסכים מפני סיכונים",
+    "fix": "כשאתם נמנעים מסיכונים"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "שווה \"לקפוא\" אותה",
+    "fix": "שווה \"להקפיא\" אותה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "כשמתוכננים תזרים מזומנים קשיח",
+    "fix": "כשיש לכם תזרים מזומנים קשיח"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "ולא תהיינו מופתעים",
+    "fix": "ולא תהיו מופתעים"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "תאפשר לכם להנות מהירידה",
+    "fix": "תאפשר לכם ליהנות מהירידה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "אם גם אם התשלום יעלה",
+    "fix": "אם גם כשהתשלום יעלה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "מכירת דירה או מקבלת ירושה",
+    "fix": "מכירת דירה או קבלת ירושה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "לבחור באחד מהאפשרויות",
+    "fix": "לבחור באחת מהאפשרויות"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "צירוף ריביות",
+    "fix": "תמהיל ריביות"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "הזדמנות להנות מירידת ריבית",
+    "fix": "הזדמנות ליהנות מירידת ריבית"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "עבור רוב המשקיעים הפרטיים",
+    "fix": "עבור רוב הלווים הפרטיים"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "שהתשובה שהקבל",
+    "fix": "שהתשובה שקיבל"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "שהדובר נשארה",
+    "fix": "שהדובר נשאר"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "כמעין \"צ'יפ\" הומוריסטי",
+    "fix": "כמעין עקיצה הומוריסטית"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "שההסבר שהקבל",
+    "fix": "שההסבר שקיבל"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "אחרי שתהיות",
+    "fix": "אחרי שעתיים"
+   },
+   {
+    "task": "open_he-4",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "הפגישה הוזזה למועד השבוע הבא",
+    "fix": "הפגישה נדחתה לשבוע הבא"
+   },
+   {
+    "task": "open_he-4",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "לפני שנציג אותם בלוח המנהלים",
+    "fix": "לפני שנציג אותם בפני הדירקטוריון"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "יש שתי מצבים",
+    "fix": "יש שני מצבים"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "או השארת דבר חשוב שלא לעשות",
+    "fix": "או נמנעת מלעשות משהו חשוב"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "אם שקרת כשחתמת על הפוליסה",
+    "fix": "אם שיקרת כשחתמת על הפוליסה"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "כשהחתמת על הביטוח",
+    "fix": "כשחתמת על הביטוח"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "או אם שקרת לה",
+    "fix": "או אם שיקרת לה"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "| גוף | תואר | צורת הפועל |",
+    "fix": "| גוף | מין ומספר | צורת הפועל |"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "(גזרה קלילה)",
+    "fix": "(גזרת השלמים)"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "foreign_word",
+    "text": "**דומיין**:",
+    "fix": "**הבחנה**:"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "בפועלים בגזרת קלילה",
+    "fix": "בפעלים בגזרת השלמים"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "ובתואר \"אתה/את\"",
+    "fix": "ובגוף \"אתה/את\""
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "בתואר \"אתם\" ו-\"אתן\"",
+    "fix": "בגוף \"אתם\" ו-\"אתן\""
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "שהפועל אכן בגזרת קלילה",
+    "fix": "שהפועל אכן בגזרת השלמים"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "נבדוק את הצורה במצווה",
+    "fix": "נבדוק את הצורה בציווי"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge1",
+    "type": "foreign_word",
+    "text": "זהו פازل קלאסי",
+    "fix": "זוהי חידה קלאסית"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "מצאת ההתחלה",
+    "fix": "מצב ההתחלה"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "⬅️ **בד** (B → A)",
+    "fix": "⬅️ **לבד** (B → A)"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "⬅️ **בד** (B → A)",
+    "fix": "⬅️ **לבד** (B → A)"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "הפיתרון מבוסס",
+    "fix": "הפתרון מבוסס"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "הסבר מפורט לכל התיקון שבוצע",
+    "fix": "הסבר מפורט לכל תיקון שבוצע"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "דורש עצמי ישיר",
+    "fix": "דורש מושא ישיר"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "אפשרות ב' (מומלץ יותר)",
+    "fix": "אפשרות ב' (מומלצת יותר)"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "היא עזר חיבור למשפט משני",
+    "fix": "היא מילת חיבור למשפט משני"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "כעזר חיבור לעצם",
+    "fix": "כמילת חיבור"
+   },
+   {
+    "task": "write-summary",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "ומאפשר לחזק את הכנרת",
+    "fix": "ומאפשר להזרים מים לכנרת"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "כולם מוזמנים לחלוק ביחד",
+    "fix": "כולם מוזמנים לבלות ביחד"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "לתורמת המשותפת",
+    "fix": "לשולחן המשותף"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "(שתיה, סלט או חטיפים)",
+    "fix": "(שתייה, סלט או חטיפים)"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "ממתינים לישראון מידיכם",
+    "fix": "מחכים לאישור מכם"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "niqqud",
+    "text": "הַיְּלָדִים",
+    "fix": "הַיְלָדִים"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "niqqud",
+    "text": "שֶׁחִקּוּ",
+    "fix": "שִׂחֲקוּ"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "niqqud",
+    "text": "בַּחֲצֵר",
+    "fix": "בֶּחָצֵר"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "ההעתיקה (ש) מקבלת חטף צירה",
+    "fix": "השי\"ן מקבלת חיריק"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "בצירוי החולם המופחת",
+    "fix": "(משפט חסר משמעות; למחוק)"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "(ספרה בעבר)",
+    "fix": "(סיפור בעבר)"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "בוא נדמין",
+    "fix": "בוא נדמיין"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "אוהבים \"לצחק\" עם האור",
+    "fix": "אוהבים \"לשחק\" עם האור"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "הם מעלים אותו לכל הכיוונים",
+    "fix": "הם מפזרים אותו לכל הכיוונים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "הם מעלים יותר את הצבעים הקצרים",
+    "fix": "הם מפזרים יותר את הצבעים הקצרים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "גם הסגול מועלה הרבה",
+    "fix": "גם הסגול מתפזר הרבה"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "כדור פינג-פונג שנשבור על הרצפה",
+    "fix": "כדור פינג-פונג שנזרוק על הרצפה"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "ומוטס לכל מיני כיוונים",
+    "fix": "ועף לכל מיני כיוונים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "האור עובר דרך אוויר קצר",
+    "fix": "האור עובר דרך מעט אוויר"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "הכחול נפוזר לכל הכיוונים",
+    "fix": "הכחול מתפזר לכל הכיוונים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "הכחול נפוזר ומחליף מקום",
+    "fix": "הכחול מתפזר ונעלם בדרך"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "בנשימות רגעים נעלים",
+    "fix": "ברגעים נעלים"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "בעומק האדמה העמוקה",
+    "fix": "בעומק האדמה"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "בין עולם מלוח ונושאה",
+    "fix": "המילה \"ונושאה\" חסרת משמעות כאן (למשל: \"בין עולם מלוח לנשמה\")"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "אינן מתורגמות ליפול",
+    "fix": "אינן מתורגמות לירידה"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "בתוצרתיות",
+    "fix": "בפריון"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "עובדים מנוחה ומרוצים יותר",
+    "fix": "עובדים נינוחים ומרוצים יותר"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "preposition_or_collocation",
+    "text": "מפיקים תפקוד גבוה יותר",
+    "fix": "מתפקדים טוב יותר"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "בשל מחלה או כישלון",
+    "fix": "בשל מחלה או שחיקה"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "השבת החמישי המשותפת",
+    "fix": "יום החופש הנוסף"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "מעבר לטווח הארוך",
+    "fix": "בטווח הארוך"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "להתמודד עם מומחי העולם",
+    "fix": "להתחרות במדינות העולם"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "הטענות נגד טוענות",
+    "fix": "המתנגדים טוענים"
+   },
+   {
+    "task": "open_he-7",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "הפסקה יומית אחת נוספת",
+    "fix": "יום חופש נוסף"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "נושא: דחיפות",
+    "fix": "הנדון: דחוף"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "הושבתה ללא פעולה כבר שבועיים ברציפות",
+    "fix": "מושבתת כבר שבועיים"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "סובלים מקושי ניידות והסתמכות מוחלטת על המעלית",
+    "fix": "סובלים מקשיי ניידות ותלויים לחלוטין במעלית"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "לצורך התניידות היומיומית",
+    "fix": "לצורך ההתניידות היומיומית"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "שני מסלולים קריירה",
+    "fix": "שני מסלולי קריירה"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "foreign_word",
+    "text": "לאדם另",
+    "fix": "לאדם אחר"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "עומד/ת במשפט שבועי של 8-12 שעות",
+    "fix": "עומד/ת במשמרת של 8–12 שעות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "החלפת חמצנים",
+    "fix": "החלפת חבישות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "עבודה ישיבה ממושכת",
+    "fix": "עבודה בישיבה ממושכת"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "תמנע התקפה משברים (burnout)",
+    "fix": "תמנע שחיקה (burnout)"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "פתרון תעלות לוגיות או בניית קשרים אנושיים",
+    "fix": "פתרון חידות לוגיות או בניית קשרים אנושיים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "ה\"פרס\" הוא פתרון תעלות לוגיות",
+    "fix": "ה\"פרס\" הוא פתרון חידות לוגיות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "שהכייתה לך את הראש",
+    "fix": "שהכתה לך את הראש (או: ששברה לך את הראש)"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "כי הרגשת אותם",
+    "fix": "כי הבנת אותם / היית קשוב/ה להם"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "קר, ביטוח ומתיש רגשית",
+    "fix": "קר, מנוכר ומתיש רגשית"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "איזו איזון",
+    "fix": "איזה איזון"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "\"בטחות\"",
+    "fix": "\"ביטחון\""
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "שעות לא שגרתיים",
+    "fix": "שעות לא שגרתיות"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "פערים שכר עצומים",
+    "fix": "פערי שכר עצומים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "foreign_word",
+    "text": "להobby שלך",
+    "fix": "לתחביב שלך"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "preposition_or_collocation",
+    "text": "שקשה עליהם במיוחד",
+    "fix": "שקשה להם במיוחד"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "preposition_or_collocation",
+    "text": "כמה תשלום חודשי תעשו",
+    "fix": "כמה תשלמו"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "foreign_word",
+    "text": "ריבית שנائية",
+    "fix": "ריבית שנתית"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "התקציב המנוצל",
+    "fix": "התקציב"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "חסכון של 300 ₪",
+    "fix": "חיסכון של 300 ₪"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "preposition_or_collocation",
+    "text": "כשאתם חוסכים מפני סיכונים",
+    "fix": "כשאתם נמנעים מסיכונים"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "שווה \"לקפוא\" אותה",
+    "fix": "שווה \"להקפיא\" אותה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "כשמתוכננים תזרים מזומנים קשיח",
+    "fix": "כשיש לכם תזרים מזומנים קשיח"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "ולא תהיינו מופתעים",
+    "fix": "ולא תהיו מופתעים"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "להנות מהירידה",
+    "fix": "ליהנות מהירידה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "(\"בופר\")",
+    "fix": "(\"באפר\")"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "אם גם אם התשלום יעלה",
+    "fix": "אם גם כשהתשלום יעלה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "או מקבלת ירושה",
+    "fix": "או קבלת ירושה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "באחד מהאפשרויות",
+    "fix": "באחת מהאפשרויות"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "צירוף ריביות",
+    "fix": "תמהיל ריביות"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "להנות מירידת ריבית",
+    "fix": "ליהנות מירידת ריבית"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "רוב המשקיעים הפרטיים",
+    "fix": "רוב הלווים הפרטיים"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "שהתשובה שהקבל",
+    "fix": "שהתשובה שקיבל"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "כמעין \"צ'יפ\" הומוריסטי",
+    "fix": "כמעין עקיצה הומוריסטית"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "שהדובר נשארה",
+    "fix": "שהדובר נשאר"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "שההסבר שהקבל",
+    "fix": "שההסבר שקיבל"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "היה גורף וחלק",
+    "fix": "היה כללי ועמום"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "אחרי שתהיות",
+    "fix": "אחרי שעתיים"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "צפופה ומשפטית",
+    "fix": "צפופה ומסובכת"
+   },
+   {
+    "task": "open_he-4",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "הפגישה הוזזה למועד השבוע הבא",
+    "fix": "הפגישה נדחתה לשבוע הבא"
+   },
+   {
+    "task": "open_he-4",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "לפני שנציג אותם בלוח המנהלים",
+    "fix": "לפני שנציג אותם בפני הדירקטוריון"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "יש שתי מצבים",
+    "fix": "יש שני מצבים"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "עשית משהו רע במיוחד",
+    "fix": "עשית משהו בכוונה"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "או השארת דבר חשוב שלא לעשות",
+    "fix": "או נמנעת מלעשות משהו חשוב"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "אם שקרת כשחתמת",
+    "fix": "אם שיקרת כשחתמת"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "כשהחתמת על הביטוח",
+    "fix": "כשחתמת על הביטוח"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "אם שקרת לה",
+    "fix": "אם שיקרת לה"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "(גזרה קלילה)",
+    "fix": "(גזרת השלמים)"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "| גוף | תואר |",
+    "fix": "| גוף | מין ומספר |"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "foreign_word",
+    "text": "דומיין",
+    "fix": "הבחנה"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "בפועלים בגזרת קלילה",
+    "fix": "בפועלים בגזרת השלמים"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "ובתואר \"אתה/את\"",
+    "fix": "ובגופים \"אתה/את\""
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "בתואר \"אתם\" ו-\"אתן\"",
+    "fix": "בגופים \"אתם\" ו\"אתן\""
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "שהפועל אכן בגזרת קלילה",
+    "fix": "שהפועל אכן בגזרת השלמים"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "נבדוק את הצורה במצווה",
+    "fix": "נבדוק את הצורה בציווי"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge2",
+    "type": "foreign_word",
+    "text": "זהו פازل קלאסי",
+    "fix": "זוהי חידה קלאסית"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "מצאת ההתחלה",
+    "fix": "מצב ההתחלה"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "⬅️ **בד** (B → A)",
+    "fix": "⬅️ **לבד** (B → A)"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "⬅️ **בד** (B → A)",
+    "fix": "⬅️ **לבד** (B → A)"
+   },
+   {
+    "task": "open_he-8",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "הפיתרון מבוסס",
+    "fix": "הפתרון מבוסס"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "הסבר מפורט לכל התיקון שבוצע",
+    "fix": "הסבר מפורט לכל התיקונים שבוצעו"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "דורש עצמי ישיר",
+    "fix": "דורש מושא ישיר"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "המילה \"אם\" היא עזר חיבור",
+    "fix": "המילה \"אם\" היא מילת חיבור"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "כעזר חיבור לעצם",
+    "fix": "כמילת חיבור"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "אפשרות ב' (מומלץ יותר)",
+    "fix": "אפשרות ב' (מומלצת יותר)"
+   },
+   {
+    "task": "write-summary",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "ומאפשר לחזק את הכנרת",
+    "fix": "ומאפשר להזרים מים לכנרת"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "כולם מוזמנים לחלוק ביחד",
+    "fix": "כולם מוזמנים ליהנות ביחד"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "לתורמת המשותפת",
+    "fix": "לשולחן המשותף"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "(שתיה, סלט או חטיפים)",
+    "fix": "(שתייה, סלט או חטיפים)"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "ממתינים לישראון מידיכם",
+    "fix": "מחכה לאישורי הגעה מכם"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "niqqud",
+    "text": "הַיְּלָדִים",
+    "fix": "הַיְלָדִים"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "niqqud",
+    "text": "שֶׁחִקּוּ",
+    "fix": "שִׂחֲקוּ"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "niqqud",
+    "text": "בַּחֲצֵר",
+    "fix": "בֶּחָצֵר"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "דגש בצירוי החולם המופחת",
+    "fix": "(צירוף חסר משמעות)"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "ההעתיקה (ש)",
+    "fix": "האות ש"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "(ספרה בעבר)",
+    "fix": "(סיפור בעבר)"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "היינו כותבים \"יִרְדֶּה\"",
+    "fix": "היינו כותבים \"יֵרֵד\""
+   }
+  ],
+  "qwen38-flash-next": [
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "היי! דמייני",
+    "fix": "היי! דמיין (פנייה לילד, ובהמשך הטקסט עובר ל\"דמיינו\")"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "מערבולת של כל הצבעים",
+    "fix": "תערובת של כל הצבעים"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "כל הצבעים הקשת",
+    "fix": "כל צבעי הקשת"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "הם מפזרים את עצמם לכל עבר",
+    "fix": "הם מתפזרים לכל עבר"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "השמש נמצאת זוויתית כל כך נמוך",
+    "fix": "השמש נמוכה כל כך"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "גלידה תפוזית",
+    "fix": "גלידת תפוזים"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "נקודת העומק בעולם",
+    "fix": "הנקודה הנמוכה בעולם"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "שמשונו משקפת",
+    "fix": "שמשו משתקפת"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "המתקשים מאוד בניידותם וללא מעלית עובדת",
+    "fix": "המתקשים מאוד בניידותם, ובמיוחד ללא מעלית עובדת"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "מדעי המחדרה היא עבודה אינטלקטואלית",
+    "fix": "מדעי המחשב הם עבודה אינטלקטואלית"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "סיעוד היא מקצוע",
+    "fix": "סיעוד הוא מקצוע"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "מרגיש מסופק יותר",
+    "fix": "מרגיש סיפוק רב יותר"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "מדעי המחדרה מציעה",
+    "fix": "מדעי המחשב מציעים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "מדעי המחדרה מציעה",
+    "fix": "מדעי המחשב מציעים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "מדעי המחדרה מציעים",
+    "fix": "מדעי המחשב מציעים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "צמיחה קרייריסטית",
+    "fix": "התקדמות בקריירה"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "יכולה לתת תשובה חד-משמעית",
+    "fix": "יכול לתת תשובה חד-משמעית"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "כמה תשלם החודש, היום ועד סוף ההלוואה",
+    "fix": "כמה תשלם בכל חודש, מהיום ועד סוף ההלוואה"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "וסך הכללת ההלוואה",
+    "fix": "וסך עלות ההלוואה"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "invented_word",
+    "text": "פסידות כפולה",
+    "fix": "הפסד כפול"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "בוא, נסע יחד ליער",
+    "fix": "בוא, ניסע יחד ליער"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "לא השג רווח",
+    "fix": "לא השיג רווח"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "הסכנה שבסכנות מיותרות",
+    "fix": "הסכנה שבנטילת סיכונים מיותרים"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "בהשקעה מסוכנת הזו",
+    "fix": "בהשקעה המסוכנת הזו"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "בתמורה לויתור",
+    "fix": "בתמורה לוויתור"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "כתַּבְתִּי",
+    "fix": "כָּתַבְתִּי"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "כתַּבְתִּי",
+    "fix": "כָּתַבְתִּי"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge1",
+    "type": "wrong_word_in_context",
+    "text": "או אפילו זריז יותר",
+    "fix": "או אפילו תמציתי יותר"
+   },
+   {
+    "task": "write-translate_he_en",
+    "judge": "scores_judge1",
+    "type": "unnatural_or_literal",
+    "text": "the Public Complaints Commissioner",
+    "fix": "the Ombudsman"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "היי חברה!",
+    "fix": "היי חבר'ה!"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge1",
+    "type": "agreement",
+    "text": "מזמינים אתכם למנגל אצלי",
+    "fix": "מזמין אתכם למנגל אצלי"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge1",
+    "type": "spelling",
+    "text": "בואו נפגש",
+    "fix": "בואו ניפגש"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "niqqud",
+    "text": "הַיְּלָדִים",
+    "fix": "הַיְלָדִים"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "niqqud",
+    "text": "בַּחָצֵר",
+    "fix": "בֶּחָצֵר"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge1",
+    "type": "other",
+    "text": "השין עם חיריק ושמאל שמאלי",
+    "fix": "השי\"ן השמאלית עם חיריק"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "היי! דמייני שהשמש",
+    "fix": "היי! דמיין שהשמש (הפנייה עוברת בהמשך ל\"דמיינו\")"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "מערבולת של כל הצבעים הקשת",
+    "fix": "מערבולת של כל צבעי הקשת"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "השמש נמצאת זוויתית כל כך נמוך",
+    "fix": "השמש נמצאת כל כך נמוך"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "האטמוספירה",
+    "fix": "האטמוספרה"
+   },
+   {
+    "task": "open_he-0",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "גלידה תפוזית",
+    "fix": "גלידת תפוזים"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "נקודת העומק בעולם",
+    "fix": "הנקודה הנמוכה בעולם"
+   },
+   {
+    "task": "open_he-10",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "שמשונו",
+    "fix": "שמשו"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "שלום רב לוועד הבית",
+    "fix": "לכבוד ועד הבית, שלום רב"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "המתקשים מאוד בניידותם וללא מעלית עובדת",
+    "fix": "המתקשים מאוד בניידות ללא מעלית עובדת"
+   },
+   {
+    "task": "open_he-1",
+    "judge": "scores_judge2",
+    "type": "preposition_or_collocation",
+    "text": "אודה לעדכון מהיר",
+    "fix": "אודה על עדכון מהיר"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "מדעי המחדרה היא עבודה אינטלקטואלית",
+    "fix": "מדעי המחשב הם תחום אינטלקטואלי"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "מדעי המחדרה מציעה",
+    "fix": "מדעי המחשב מציעים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "מדעי המחדרה מציעה",
+    "fix": "מציעים"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "מדעי המחדרה מציעים פוטנציאל",
+    "fix": "מדעי המחשב מציעים פוטנציאל"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "מרגיש מסופק יותר",
+    "fix": "מרגיש מרוצה יותר / חש סיפוק רב יותר"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "סיעוד היא מקצוע של \"אדמה\"",
+    "fix": "סיעוד הוא מקצוע"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "צמיחה קרייריסטית",
+    "fix": "התקדמות מקצועית"
+   },
+   {
+    "task": "open_he-11",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "יכולה לתת תשובה חד-משמעית",
+    "fix": "יכול לתת תשובה חד-משמעית (הנושא: ניסיון)"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "אתה מעדיף וודאות",
+    "fix": "אתה מעדיף ודאות"
+   },
+   {
+    "task": "open_he-2",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "וסך הכללת ההלוואה",
+    "fix": "וסך עלות ההלוואה"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "invented_word",
+    "text": "פסידות כפולה",
+    "fix": "הפסד כפול"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "בוא, נסע יחד ליער",
+    "fix": "בוא, ניסע יחד ליער"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "לא השג רווח",
+    "fix": "לא השיג רווח"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "הסכנה שבסכנות מיותרות",
+    "fix": "הסכנה שבנטילת סיכונים מיותרים"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "בהשקעה מסוכנת הזו",
+    "fix": "בהשקעה המסוכנת הזו"
+   },
+   {
+    "task": "open_he-5",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "בתמורה לויתור",
+    "fix": "בתמורה לוויתור"
+   },
+   {
+    "task": "open_he-6",
+    "judge": "scores_judge2",
+    "type": "preposition_or_collocation",
+    "text": "בעת שנרשמת לפוליסה",
+    "fix": "כשרכשת את הפוליסה"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "הנה הטית הפועל",
+    "fix": "הנה הטיית הפועל"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "כתַּבְתִּי",
+    "fix": "כָּתַבְתִּי"
+   },
+   {
+    "task": "open_he-9",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "כתַּבְתִּי",
+    "fix": "כָּתַבְתִּי"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge2",
+    "type": "other",
+    "text": "(כיוון שלעבר, לכיוון)",
+    "fix": "(המציינת כיוון)"
+   },
+   {
+    "task": "open_he-3",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "או אפילו זריז יותר",
+    "fix": "או אפילו תמציתי יותר"
+   },
+   {
+    "task": "write-translate_he_en",
+    "judge": "scores_judge2",
+    "type": "unnatural_or_literal",
+    "text": "and instead filed a complaint",
+    "fix": "and filed a complaint"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "היי חברה!",
+    "fix": "היי חבר'ה!"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge2",
+    "type": "agreement",
+    "text": "מזמינים אתכם למנגל אצלי",
+    "fix": "מזמין אתכם למנגל אצלי"
+   },
+   {
+    "task": "write-register",
+    "judge": "scores_judge2",
+    "type": "spelling",
+    "text": "בואו נפגש",
+    "fix": "בואו ניפגש"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "niqqud",
+    "text": "הַיְּלָדִים",
+    "fix": "הַיְלָדִים"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "niqqud",
+    "text": "בַּחָצֵר",
+    "fix": "בֶּחָצֵר"
+   },
+   {
+    "task": "write-niqqud",
+    "judge": "scores_judge2",
+    "type": "wrong_word_in_context",
+    "text": "השין עם חיריק ושמאל שמאלי",
+    "fix": "השי\"ן שמאלית ועם חיריק"
+   }
+  ]
+ }
+}

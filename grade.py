@@ -1,7 +1,7 @@
 """Grade the auto-gradable runs and summarise thinking behaviour -> results/summary.json (+ printed tables).
 
   accuracy      per model x section x mode x part (multiple choice: letter after "התשובה:"; numbers: exact value)
-  paired        per section/mode: items only model A got right vs only model B, two-sided sign test
+  paired        per section/mode and pair of models: items only A got right vs only B, two-sided sign test
   thinking      generated tokens (median / p90), truncated runs, seconds per item, decode speed,
                 and the script of the thinking text: share of Hebrew / Latin / CJK letters
   answer purity answers that contain CJK, Cyrillic or Arabic letters, or Latin words (writing translation task excluded)
@@ -11,12 +11,13 @@ import json
 import re
 import statistics as st
 from collections import defaultdict
+from itertools import combinations
 from fractions import Fraction
 from math import comb
 from pathlib import Path
 
 R = Path("results")
-MODELS = ["qwen38-27b", "qwen38-flash-next"]
+MODELS = ["qwen38-27b", "qwen38-flash-next", "gemma4-26b-a4b"]
 HEB, LAT = re.compile(r"[א-ת]"), re.compile(r"[A-Za-z]")
 CJK, CYR, ARA = re.compile(r"[぀-ヿ一-鿿가-힯]"), re.compile(r"[Ѐ-ӿ]"), re.compile(r"[؀-ۿ]")
 LATWORD = re.compile(r"\b[A-Za-z]{3,}\b")
@@ -79,16 +80,16 @@ def main():
             acc = {p: {"correct": sum(v), "n": len(v), "pct": round(100 * sum(v) / len(v), 1)} for p, v in parts.items()}
             summary["accuracy"][f"{model}|{section}|{mode}"] = acc
             print(f"{model:20s} {section:9s} {mode:8s} " + "  ".join(f"{p} {a['correct']}/{a['n']}" for p, a in sorted(acc.items())))
-        if all(m in by_model for m in MODELS):
-            a, b = (by_model[m] for m in MODELS)
+        for ma, mb in combinations([m for m in MODELS if m in by_model], 2):
+            a, b = by_model[ma], by_model[mb]
             ids = sorted(set(a) & set(b))
             ca, cb = [correct(a[i]) for i in ids], [correct(b[i]) for i in ids]
             oa = sum(x and not y for x, y in zip(ca, cb))
             ob = sum(y and not x for x, y in zip(ca, cb))
-            summary["paired"][f"{section}|{mode}"] = {"n": len(ids), f"only_{MODELS[0]}": oa, f"only_{MODELS[1]}": ob,
-                                                     "both": sum(x and y for x, y in zip(ca, cb)),
-                                                     "neither": sum(not x and not y for x, y in zip(ca, cb)),
-                                                     "sign_p": round(sign(oa, ob), 3)}
+            summary["paired"][f"{section}|{mode}|{ma}|{mb}"] = {
+                "a": ma, "b": mb, "n": len(ids), "only_a": oa, "only_b": ob,
+                "both": sum(x and y for x, y in zip(ca, cb)), "neither": sum(not x and not y for x, y in zip(ca, cb)),
+                "sign_p": round(sign(oa, ob), 3)}
 
     print("\n=== thinking / speed ===")
     for (section, mode), by_model in sorted(runs.items()):

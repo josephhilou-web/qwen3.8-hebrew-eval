@@ -1,0 +1,2174 @@
+{
+ "gemma4-26b-a4b-1120tok": {
+  "n": 66,
+  "ocr": {
+   "clean": {
+    "n": 12,
+    "cer_mean": 0.0417,
+    "cer_median": 0.0051,
+    "word_f1_mean": 0.983,
+    "word_precision_mean": 0.983,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "pages_with_reversed": 0
+   },
+   "scan": {
+    "n": 12,
+    "cer_mean": 0.0832,
+    "cer_median": 0.0263,
+    "word_f1_mean": 0.975,
+    "word_precision_mean": 0.975,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "pages_with_reversed": 0
+   }
+  },
+  "qa": {
+   "all": {
+    "correct": 41,
+    "n": 42
+   },
+   "num": {
+    "correct": 22,
+    "n": 22
+   },
+   "id": {
+    "correct": 8,
+    "n": 8
+   },
+   "text": {
+    "correct": 8,
+    "n": 9
+   },
+   "date": {
+    "correct": 3,
+    "n": 3
+   }
+  },
+  "per_doc": {
+   "invoice|clean": {
+    "cer": 0.0,
+    "word_precision": 1.0,
+    "word_recall": 1.0,
+    "word_f1": 1.0,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "invoice|scan": {
+    "cer": 0.0,
+    "word_precision": 1.0,
+    "word_recall": 1.0,
+    "word_f1": 1.0,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "invoice|qa": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "form|clean": {
+    "cer": 0.3485,
+    "word_precision": 0.988,
+    "word_recall": 0.988,
+    "word_f1": 0.988,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "form|scan": {
+    "cer": 0.381,
+    "word_precision": 0.988,
+    "word_recall": 0.988,
+    "word_f1": 0.988,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "form|qa": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "letter|clean": {
+    "cer": 0.0027,
+    "word_precision": 0.985,
+    "word_recall": 0.985,
+    "word_f1": 0.985,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "letter|scan": {
+    "cer": 0.0027,
+    "word_precision": 0.985,
+    "word_recall": 0.985,
+    "word_f1": 0.985,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "letter|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "statement|clean": {
+    "cer": 0.0741,
+    "word_precision": 1.0,
+    "word_recall": 1.0,
+    "word_f1": 1.0,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "statement|scan": {
+    "cer": 0.0741,
+    "word_precision": 1.0,
+    "word_recall": 1.0,
+    "word_f1": 1.0,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "statement|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "procedure|clean": {
+    "cer": 0.0037,
+    "word_precision": 0.993,
+    "word_recall": 0.993,
+    "word_f1": 0.993,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|scan": {
+    "cer": 0.0633,
+    "word_precision": 0.993,
+    "word_recall": 0.987,
+    "word_f1": 0.99,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "pricelist|clean": {
+    "cer": 0.0042,
+    "word_precision": 0.977,
+    "word_recall": 0.977,
+    "word_f1": 0.977,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|scan": {
+    "cer": 0.0084,
+    "word_precision": 0.965,
+    "word_recall": 0.965,
+    "word_f1": 0.965,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|qa": [
+    true,
+    true,
+    true
+   ],
+   "mixed|clean": {
+    "cer": 0.0316,
+    "word_precision": 0.989,
+    "word_recall": 0.989,
+    "word_f1": 0.989,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|scan": {
+    "cer": 0.0351,
+    "word_precision": 0.977,
+    "word_recall": 0.977,
+    "word_f1": 0.977,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "niqqud|clean": {
+    "cer": 0.0,
+    "word_precision": 1.0,
+    "word_recall": 1.0,
+    "word_f1": 1.0,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.2031
+   },
+   "niqqud|scan": {
+    "cer": 0.0129,
+    "word_precision": 0.935,
+    "word_recall": 0.935,
+    "word_f1": 0.935,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.1839
+   },
+   "niqqud|qa": [
+    true,
+    true
+   ],
+   "article|clean": {
+    "cer": 0.0114,
+    "word_precision": 0.966,
+    "word_recall": 0.966,
+    "word_f1": 0.966,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|scan": {
+    "cer": 0.3534,
+    "word_precision": 0.966,
+    "word_recall": 0.966,
+    "word_f1": 0.966,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|qa": [
+    true,
+    true,
+    true
+   ],
+   "smallprint|clean": {
+    "cer": 0.0044,
+    "word_precision": 0.982,
+    "word_recall": 0.982,
+    "word_f1": 0.982,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "smallprint|scan": {
+    "cer": 0.0175,
+    "word_precision": 0.941,
+    "word_recall": 0.936,
+    "word_f1": 0.938,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "smallprint|qa": [
+    true,
+    true,
+    true
+   ],
+   "receipt|clean": {
+    "cer": 0.0137,
+    "word_precision": 0.948,
+    "word_recall": 0.948,
+    "word_f1": 0.948,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|scan": {
+    "cer": 0.0445,
+    "word_precision": 0.983,
+    "word_recall": 0.983,
+    "word_f1": 0.983,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|qa": [
+    true,
+    true,
+    true
+   ],
+   "note|clean": {
+    "cer": 0.0057,
+    "word_precision": 0.97,
+    "word_recall": 0.97,
+    "word_f1": 0.97,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|scan": {
+    "cer": 0.0057,
+    "word_precision": 0.97,
+    "word_recall": 0.97,
+    "word_f1": 0.97,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|qa": [
+    true,
+    false
+   ]
+  },
+  "seconds_mean": 5.4
+ },
+ "gemma4-26b-a4b": {
+  "n": 66,
+  "ocr": {
+   "clean": {
+    "n": 12,
+    "cer_mean": 0.0346,
+    "cer_median": 0.0168,
+    "word_f1_mean": 0.959,
+    "word_precision_mean": 0.963,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "pages_with_reversed": 0
+   },
+   "scan": {
+    "n": 12,
+    "cer_mean": 0.0568,
+    "cer_median": 0.025,
+    "word_f1_mean": 0.946,
+    "word_precision_mean": 0.949,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "pages_with_reversed": 0
+   }
+  },
+  "qa": {
+   "all": {
+    "correct": 40,
+    "n": 42
+   },
+   "num": {
+    "correct": 22,
+    "n": 22
+   },
+   "id": {
+    "correct": 8,
+    "n": 8
+   },
+   "text": {
+    "correct": 8,
+    "n": 9
+   },
+   "date": {
+    "correct": 2,
+    "n": 3
+   }
+  },
+  "per_doc": {
+   "invoice|clean": {
+    "cer": 0.0151,
+    "word_precision": 0.974,
+    "word_recall": 0.962,
+    "word_f1": 0.968,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "invoice|scan": {
+    "cer": 0.0022,
+    "word_precision": 0.987,
+    "word_recall": 0.987,
+    "word_f1": 0.987,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "invoice|qa": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "form|clean": {
+    "cer": 0.1472,
+    "word_precision": 0.975,
+    "word_recall": 0.975,
+    "word_f1": 0.975,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "form|scan": {
+    "cer": 0.2771,
+    "word_precision": 0.975,
+    "word_recall": 0.975,
+    "word_f1": 0.975,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "form|qa": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "letter|clean": {
+    "cer": 0.0175,
+    "word_precision": 0.97,
+    "word_recall": 0.962,
+    "word_f1": 0.966,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "letter|scan": {
+    "cer": 0.0242,
+    "word_precision": 0.926,
+    "word_recall": 0.94,
+    "word_f1": 0.933,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "letter|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "statement|clean": {
+    "cer": 0.0032,
+    "word_precision": 0.99,
+    "word_recall": 0.99,
+    "word_f1": 0.99,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "statement|scan": {
+    "cer": 0.0741,
+    "word_precision": 0.99,
+    "word_recall": 0.99,
+    "word_f1": 0.99,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "statement|qa": [
+    true,
+    true,
+    false,
+    true
+   ],
+   "procedure|clean": {
+    "cer": 0.0161,
+    "word_precision": 0.987,
+    "word_recall": 0.974,
+    "word_f1": 0.98,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|scan": {
+    "cer": 0.0372,
+    "word_precision": 0.954,
+    "word_recall": 0.947,
+    "word_f1": 0.95,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "pricelist|clean": {
+    "cer": 0.0063,
+    "word_precision": 0.965,
+    "word_recall": 0.965,
+    "word_f1": 0.965,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|scan": {
+    "cer": 0.0148,
+    "word_precision": 0.953,
+    "word_recall": 0.953,
+    "word_f1": 0.953,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|qa": [
+    true,
+    true,
+    true
+   ],
+   "mixed|clean": {
+    "cer": 0.0561,
+    "word_precision": 0.988,
+    "word_recall": 0.955,
+    "word_f1": 0.971,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|scan": {
+    "cer": 0.0965,
+    "word_precision": 0.977,
+    "word_recall": 0.955,
+    "word_f1": 0.966,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "niqqud|clean": {
+    "cer": 0.0194,
+    "word_precision": 0.967,
+    "word_recall": 0.935,
+    "word_f1": 0.951,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.2107
+   },
+   "niqqud|scan": {
+    "cer": 0.0258,
+    "word_precision": 0.9,
+    "word_recall": 0.871,
+    "word_f1": 0.885,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.2031
+   },
+   "niqqud|qa": [
+    false,
+    true
+   ],
+   "article|clean": {
+    "cer": 0.02,
+    "word_precision": 0.95,
+    "word_recall": 0.958,
+    "word_f1": 0.954,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|scan": {
+    "cer": 0.0172,
+    "word_precision": 0.966,
+    "word_recall": 0.958,
+    "word_f1": 0.962,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|qa": [
+    true,
+    true,
+    true
+   ],
+   "smallprint|clean": {
+    "cer": 0.0952,
+    "word_precision": 0.85,
+    "word_recall": 0.83,
+    "word_f1": 0.84,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "smallprint|scan": {
+    "cer": 0.0996,
+    "word_precision": 0.826,
+    "word_recall": 0.807,
+    "word_f1": 0.817,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "smallprint|qa": [
+    true,
+    true,
+    true
+   ],
+   "receipt|clean": {
+    "cer": 0.0137,
+    "word_precision": 0.966,
+    "word_recall": 0.983,
+    "word_f1": 0.974,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|scan": {
+    "cer": 0.0068,
+    "word_precision": 0.966,
+    "word_recall": 0.966,
+    "word_f1": 0.966,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|qa": [
+    true,
+    true,
+    true
+   ],
+   "note|clean": {
+    "cer": 0.0057,
+    "word_precision": 0.97,
+    "word_recall": 0.97,
+    "word_f1": 0.97,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|scan": {
+    "cer": 0.0057,
+    "word_precision": 0.97,
+    "word_recall": 0.97,
+    "word_f1": 0.97,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|qa": [
+    true,
+    true
+   ]
+  },
+  "seconds_mean": 2.8
+ },
+ "qwen38-27b-bf16": {
+  "n": 66,
+  "ocr": {
+   "clean": {
+    "n": 12,
+    "cer_mean": 0.1246,
+    "cer_median": 0.0377,
+    "word_f1_mean": 0.804,
+    "word_precision_mean": 0.805,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 6,
+    "reversed_numbers": 5,
+    "pages_with_reversed": 3
+   },
+   "scan": {
+    "n": 12,
+    "cer_mean": 0.192,
+    "cer_median": 0.1787,
+    "word_f1_mean": 0.658,
+    "word_precision_mean": 0.662,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 9,
+    "reversed_numbers": 0,
+    "pages_with_reversed": 2
+   }
+  },
+  "qa": {
+   "all": {
+    "correct": 33,
+    "n": 42
+   },
+   "num": {
+    "correct": 19,
+    "n": 22
+   },
+   "id": {
+    "correct": 8,
+    "n": 8
+   },
+   "text": {
+    "correct": 5,
+    "n": 9
+   },
+   "date": {
+    "correct": 1,
+    "n": 3
+   }
+  },
+  "per_doc": {
+   "invoice|clean": {
+    "cer": 0.0216,
+    "word_precision": 0.936,
+    "word_recall": 0.936,
+    "word_f1": 0.936,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "invoice|scan": {
+    "cer": 0.0194,
+    "word_precision": 0.91,
+    "word_recall": 0.91,
+    "word_f1": 0.91,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "invoice|qa": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "form|clean": {
+    "cer": 0.3593,
+    "word_precision": 0.951,
+    "word_recall": 0.963,
+    "word_f1": 0.957,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "form|scan": {
+    "cer": 0.4307,
+    "word_precision": 0.613,
+    "word_recall": 0.568,
+    "word_f1": 0.59,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "form|qa": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "letter|clean": {
+    "cer": 0.0256,
+    "word_precision": 0.939,
+    "word_recall": 0.932,
+    "word_f1": 0.936,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "letter|scan": {
+    "cer": 0.4024,
+    "word_precision": 0.356,
+    "word_recall": 0.353,
+    "word_f1": 0.355,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 4,
+    "reversed_numbers": 0
+   },
+   "letter|qa": [
+    true,
+    false,
+    true,
+    false
+   ],
+   "statement|clean": {
+    "cer": 0.2319,
+    "word_precision": 0.594,
+    "word_recall": 0.588,
+    "word_f1": 0.591,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 2
+   },
+   "statement|scan": {
+    "cer": 0.2871,
+    "word_precision": 0.505,
+    "word_recall": 0.495,
+    "word_f1": 0.5,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 5,
+    "reversed_numbers": 0
+   },
+   "statement|qa": [
+    true,
+    false,
+    false,
+    false
+   ],
+   "procedure|clean": {
+    "cer": 0.0261,
+    "word_precision": 0.941,
+    "word_recall": 0.941,
+    "word_f1": 0.941,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|scan": {
+    "cer": 0.3089,
+    "word_precision": 0.511,
+    "word_recall": 0.474,
+    "word_f1": 0.491,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|qa": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "pricelist|clean": {
+    "cer": 0.0211,
+    "word_precision": 0.942,
+    "word_recall": 0.942,
+    "word_f1": 0.942,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|scan": {
+    "cer": 0.0295,
+    "word_precision": 0.919,
+    "word_recall": 0.919,
+    "word_f1": 0.919,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|qa": [
+    true,
+    true,
+    true
+   ],
+   "mixed|clean": {
+    "cer": 0.0351,
+    "word_precision": 0.989,
+    "word_recall": 0.989,
+    "word_f1": 0.989,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|scan": {
+    "cer": 0.0579,
+    "word_precision": 0.864,
+    "word_recall": 0.864,
+    "word_f1": 0.864,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "niqqud|clean": {
+    "cer": 0.0194,
+    "word_precision": 0.903,
+    "word_recall": 0.903,
+    "word_f1": 0.903,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.2184
+   },
+   "niqqud|scan": {
+    "cer": 0.2,
+    "word_precision": 0.355,
+    "word_recall": 0.355,
+    "word_f1": 0.355,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.387
+   },
+   "niqqud|qa": [
+    true,
+    true
+   ],
+   "article|clean": {
+    "cer": 0.0558,
+    "word_precision": 0.79,
+    "word_recall": 0.79,
+    "word_f1": 0.79,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|scan": {
+    "cer": 0.1574,
+    "word_precision": 0.639,
+    "word_recall": 0.639,
+    "word_f1": 0.639,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|qa": [
+    false,
+    true,
+    false
+   ],
+   "smallprint|clean": {
+    "cer": 0.4365,
+    "word_precision": 0.173,
+    "word_recall": 0.164,
+    "word_f1": 0.168,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 6,
+    "reversed_numbers": 0
+   },
+   "smallprint|scan": {
+    "cer": 0.3468,
+    "word_precision": 0.45,
+    "word_recall": 0.444,
+    "word_f1": 0.447,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "smallprint|qa": [
+    true,
+    true,
+    true
+   ],
+   "receipt|clean": {
+    "cer": 0.2226,
+    "word_precision": 0.661,
+    "word_recall": 0.672,
+    "word_f1": 0.667,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 3
+   },
+   "receipt|scan": {
+    "cer": 0.0411,
+    "word_precision": 0.914,
+    "word_recall": 0.914,
+    "word_f1": 0.914,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|qa": [
+    true,
+    true,
+    true
+   ],
+   "note|clean": {
+    "cer": 0.0402,
+    "word_precision": 0.844,
+    "word_recall": 0.818,
+    "word_f1": 0.831,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|scan": {
+    "cer": 0.023,
+    "word_precision": 0.909,
+    "word_recall": 0.909,
+    "word_f1": 0.909,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|qa": [
+    true,
+    true
+   ]
+  },
+  "seconds_mean": 18.1
+ },
+ "qwen38-27b": {
+  "n": 66,
+  "ocr": {
+   "clean": {
+    "n": 12,
+    "cer_mean": 0.1188,
+    "cer_median": 0.031,
+    "word_f1_mean": 0.823,
+    "word_precision_mean": 0.824,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 7,
+    "reversed_numbers": 3,
+    "pages_with_reversed": 3
+   },
+   "scan": {
+    "n": 12,
+    "cer_mean": 0.208,
+    "cer_median": 0.1611,
+    "word_f1_mean": 0.639,
+    "word_precision_mean": 0.642,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 44,
+    "reversed_numbers": 0,
+    "pages_with_reversed": 2
+   }
+  },
+  "qa": {
+   "all": {
+    "correct": 33,
+    "n": 42
+   },
+   "num": {
+    "correct": 19,
+    "n": 22
+   },
+   "id": {
+    "correct": 8,
+    "n": 8
+   },
+   "text": {
+    "correct": 5,
+    "n": 9
+   },
+   "date": {
+    "correct": 1,
+    "n": 3
+   }
+  },
+  "per_doc": {
+   "invoice|clean": {
+    "cer": 0.0216,
+    "word_precision": 0.936,
+    "word_recall": 0.936,
+    "word_f1": 0.936,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "invoice|scan": {
+    "cer": 0.0194,
+    "word_precision": 0.91,
+    "word_recall": 0.91,
+    "word_f1": 0.91,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "invoice|qa": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "form|clean": {
+    "cer": 0.3615,
+    "word_precision": 0.963,
+    "word_recall": 0.975,
+    "word_f1": 0.969,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "form|scan": {
+    "cer": 0.4502,
+    "word_precision": 0.595,
+    "word_recall": 0.58,
+    "word_f1": 0.587,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "form|qa": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "letter|clean": {
+    "cer": 0.0269,
+    "word_precision": 0.932,
+    "word_recall": 0.925,
+    "word_f1": 0.928,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "letter|scan": {
+    "cer": 0.5828,
+    "word_precision": 0.129,
+    "word_recall": 0.135,
+    "word_f1": 0.132,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 38,
+    "reversed_numbers": 0
+   },
+   "letter|qa": [
+    true,
+    false,
+    true,
+    false
+   ],
+   "statement|clean": {
+    "cer": 0.1546,
+    "word_precision": 0.732,
+    "word_recall": 0.732,
+    "word_f1": 0.732,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 1,
+    "reversed_numbers": 0
+   },
+   "statement|scan": {
+    "cer": 0.2808,
+    "word_precision": 0.516,
+    "word_recall": 0.505,
+    "word_f1": 0.51,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 6,
+    "reversed_numbers": 0
+   },
+   "statement|qa": [
+    true,
+    false,
+    false,
+    false
+   ],
+   "procedure|clean": {
+    "cer": 0.0261,
+    "word_precision": 0.941,
+    "word_recall": 0.947,
+    "word_f1": 0.944,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|scan": {
+    "cer": 0.3251,
+    "word_precision": 0.5,
+    "word_recall": 0.454,
+    "word_f1": 0.476,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|qa": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "pricelist|clean": {
+    "cer": 0.0211,
+    "word_precision": 0.942,
+    "word_recall": 0.942,
+    "word_f1": 0.942,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|scan": {
+    "cer": 0.0316,
+    "word_precision": 0.919,
+    "word_recall": 0.919,
+    "word_f1": 0.919,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|qa": [
+    true,
+    true,
+    true
+   ],
+   "mixed|clean": {
+    "cer": 0.0351,
+    "word_precision": 0.989,
+    "word_recall": 0.989,
+    "word_f1": 0.989,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|scan": {
+    "cer": 0.0561,
+    "word_precision": 0.851,
+    "word_recall": 0.841,
+    "word_f1": 0.846,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "niqqud|clean": {
+    "cer": 0.0194,
+    "word_precision": 0.903,
+    "word_recall": 0.903,
+    "word_f1": 0.903,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.2414
+   },
+   "niqqud|scan": {
+    "cer": 0.1806,
+    "word_precision": 0.387,
+    "word_recall": 0.387,
+    "word_f1": 0.387,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.3908
+   },
+   "niqqud|qa": [
+    true,
+    true
+   ],
+   "article|clean": {
+    "cer": 0.0529,
+    "word_precision": 0.824,
+    "word_recall": 0.824,
+    "word_f1": 0.824,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|scan": {
+    "cer": 0.1416,
+    "word_precision": 0.664,
+    "word_recall": 0.664,
+    "word_f1": 0.664,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|qa": [
+    false,
+    true,
+    false
+   ],
+   "smallprint|clean": {
+    "cer": 0.4672,
+    "word_precision": 0.161,
+    "word_recall": 0.146,
+    "word_f1": 0.153,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 6,
+    "reversed_numbers": 0
+   },
+   "smallprint|scan": {
+    "cer": 0.3501,
+    "word_precision": 0.431,
+    "word_recall": 0.421,
+    "word_f1": 0.426,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "smallprint|qa": [
+    true,
+    true,
+    true
+   ],
+   "receipt|clean": {
+    "cer": 0.2226,
+    "word_precision": 0.661,
+    "word_recall": 0.672,
+    "word_f1": 0.667,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 3
+   },
+   "receipt|scan": {
+    "cer": 0.0548,
+    "word_precision": 0.897,
+    "word_recall": 0.897,
+    "word_f1": 0.897,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|qa": [
+    true,
+    true,
+    true
+   ],
+   "note|clean": {
+    "cer": 0.0172,
+    "word_precision": 0.906,
+    "word_recall": 0.879,
+    "word_f1": 0.892,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|scan": {
+    "cer": 0.023,
+    "word_precision": 0.909,
+    "word_recall": 0.909,
+    "word_f1": 0.909,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|qa": [
+    true,
+    true
+   ]
+  },
+  "seconds_mean": 11.8
+ },
+ "qwen38-flash-next-min1024": {
+  "n": 66,
+  "ocr": {
+   "clean": {
+    "n": 12,
+    "cer_mean": 0.308,
+    "cer_median": 0.2275,
+    "word_f1_mean": 0.539,
+    "word_precision_mean": 0.547,
+    "foreign": 1,
+    "truncated": 0,
+    "reversed_words": 144,
+    "reversed_numbers": 0,
+    "pages_with_reversed": 4
+   },
+   "scan": {
+    "n": 12,
+    "cer_mean": 0.3677,
+    "cer_median": 0.3178,
+    "word_f1_mean": 0.493,
+    "word_precision_mean": 0.516,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 99,
+    "reversed_numbers": 9,
+    "pages_with_reversed": 3
+   }
+  },
+  "qa": {
+   "all": {
+    "correct": 32,
+    "n": 42
+   },
+   "num": {
+    "correct": 19,
+    "n": 22
+   },
+   "id": {
+    "correct": 7,
+    "n": 8
+   },
+   "text": {
+    "correct": 5,
+    "n": 9
+   },
+   "date": {
+    "correct": 1,
+    "n": 3
+   }
+  },
+  "per_doc": {
+   "invoice|clean": {
+    "cer": 0.1875,
+    "word_precision": 0.737,
+    "word_recall": 0.718,
+    "word_f1": 0.727,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "invoice|scan": {
+    "cer": 0.4418,
+    "word_precision": 0.403,
+    "word_recall": 0.397,
+    "word_f1": 0.4,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 9
+   },
+   "invoice|qa": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "form|clean": {
+    "cer": 0.7229,
+    "word_precision": 0.295,
+    "word_recall": 0.284,
+    "word_f1": 0.289,
+    "foreign": true,
+    "truncated": false,
+    "reversed_words": 21,
+    "reversed_numbers": 0
+   },
+   "form|scan": {
+    "cer": 0.5411,
+    "word_precision": 0.687,
+    "word_recall": 0.704,
+    "word_f1": 0.695,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "form|qa": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "letter|clean": {
+    "cer": 0.2571,
+    "word_precision": 0.541,
+    "word_recall": 0.496,
+    "word_f1": 0.518,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "letter|scan": {
+    "cer": 0.2921,
+    "word_precision": 0.48,
+    "word_recall": 0.459,
+    "word_f1": 0.469,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 3,
+    "reversed_numbers": 0
+   },
+   "letter|qa": [
+    true,
+    false,
+    true,
+    false
+   ],
+   "statement|clean": {
+    "cer": 0.1498,
+    "word_precision": 0.811,
+    "word_recall": 0.794,
+    "word_f1": 0.802,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 2,
+    "reversed_numbers": 0
+   },
+   "statement|scan": {
+    "cer": 0.4621,
+    "word_precision": 0.786,
+    "word_recall": 0.454,
+    "word_f1": 0.575,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "statement|qa": [
+    true,
+    false,
+    false,
+    true
+   ],
+   "procedure|clean": {
+    "cer": 0.2965,
+    "word_precision": 0.507,
+    "word_recall": 0.454,
+    "word_f1": 0.479,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|scan": {
+    "cer": 0.2965,
+    "word_precision": 0.51,
+    "word_recall": 0.487,
+    "word_f1": 0.498,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|qa": [
+    false,
+    true,
+    false,
+    true
+   ],
+   "pricelist|clean": {
+    "cer": 0.1477,
+    "word_precision": 0.64,
+    "word_recall": 0.64,
+    "word_f1": 0.64,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|scan": {
+    "cer": 0.0865,
+    "word_precision": 0.784,
+    "word_recall": 0.802,
+    "word_f1": 0.793,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|qa": [
+    true,
+    true,
+    true
+   ],
+   "mixed|clean": {
+    "cer": 0.2333,
+    "word_precision": 0.511,
+    "word_recall": 0.523,
+    "word_f1": 0.517,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|scan": {
+    "cer": 0.2614,
+    "word_precision": 0.483,
+    "word_recall": 0.477,
+    "word_f1": 0.48,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "niqqud|clean": {
+    "cer": 0.1226,
+    "word_precision": 0.645,
+    "word_recall": 0.645,
+    "word_f1": 0.645,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.2337
+   },
+   "niqqud|scan": {
+    "cer": 0.2839,
+    "word_precision": 0.241,
+    "word_recall": 0.226,
+    "word_f1": 0.233,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.5517
+   },
+   "niqqud|qa": [
+    true,
+    true
+   ],
+   "article|clean": {
+    "cer": 0.2217,
+    "word_precision": 0.549,
+    "word_recall": 0.521,
+    "word_f1": 0.534,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 3,
+    "reversed_numbers": 0
+   },
+   "article|scan": {
+    "cer": 0.3391,
+    "word_precision": 0.279,
+    "word_recall": 0.261,
+    "word_f1": 0.27,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|qa": [
+    true,
+    true,
+    false
+   ],
+   "smallprint|clean": {
+    "cer": 0.7965,
+    "word_precision": 0.111,
+    "word_recall": 0.111,
+    "word_f1": 0.111,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 118,
+    "reversed_numbers": 0
+   },
+   "smallprint|scan": {
+    "cer": 0.7352,
+    "word_precision": 0.129,
+    "word_recall": 0.129,
+    "word_f1": 0.129,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 96,
+    "reversed_numbers": 0
+   },
+   "smallprint|qa": [
+    true,
+    true,
+    true
+   ],
+   "receipt|clean": {
+    "cer": 0.3767,
+    "word_precision": 0.754,
+    "word_recall": 0.741,
+    "word_f1": 0.748,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|scan": {
+    "cer": 0.1438,
+    "word_precision": 0.983,
+    "word_recall": 0.983,
+    "word_f1": 0.983,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|qa": [
+    true,
+    true,
+    true
+   ],
+   "note|clean": {
+    "cer": 0.1839,
+    "word_precision": 0.469,
+    "word_recall": 0.455,
+    "word_f1": 0.462,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|scan": {
+    "cer": 0.5287,
+    "word_precision": 0.429,
+    "word_recall": 0.364,
+    "word_f1": 0.393,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|qa": [
+    true,
+    false
+   ]
+  },
+  "seconds_mean": 6.6
+ },
+ "qwen38-flash-next": {
+  "n": 66,
+  "ocr": {
+   "clean": {
+    "n": 12,
+    "cer_mean": 0.321,
+    "cer_median": 0.2116,
+    "word_f1_mean": 0.585,
+    "word_precision_mean": 0.59,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 119,
+    "reversed_numbers": 3,
+    "pages_with_reversed": 6
+   },
+   "scan": {
+    "n": 12,
+    "cer_mean": 0.3853,
+    "cer_median": 0.3256,
+    "word_f1_mean": 0.455,
+    "word_precision_mean": 0.462,
+    "foreign": 0,
+    "truncated": 0,
+    "reversed_words": 49,
+    "reversed_numbers": 17,
+    "pages_with_reversed": 6
+   }
+  },
+  "qa": {
+   "all": {
+    "correct": 32,
+    "n": 42
+   },
+   "num": {
+    "correct": 18,
+    "n": 22
+   },
+   "id": {
+    "correct": 8,
+    "n": 8
+   },
+   "text": {
+    "correct": 4,
+    "n": 9
+   },
+   "date": {
+    "correct": 2,
+    "n": 3
+   }
+  },
+  "per_doc": {
+   "invoice|clean": {
+    "cer": 0.1336,
+    "word_precision": 0.766,
+    "word_recall": 0.756,
+    "word_f1": 0.761,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 2
+   },
+   "invoice|scan": {
+    "cer": 0.1983,
+    "word_precision": 0.62,
+    "word_recall": 0.628,
+    "word_f1": 0.624,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 1,
+    "reversed_numbers": 0
+   },
+   "invoice|qa": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "form|clean": {
+    "cer": 0.8074,
+    "word_precision": 0.333,
+    "word_recall": 0.309,
+    "word_f1": 0.321,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 1
+   },
+   "form|scan": {
+    "cer": 0.829,
+    "word_precision": 0.167,
+    "word_recall": 0.16,
+    "word_f1": 0.164,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 45,
+    "reversed_numbers": 0
+   },
+   "form|qa": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "letter|clean": {
+    "cer": 0.1884,
+    "word_precision": 0.634,
+    "word_recall": 0.624,
+    "word_f1": 0.629,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 1,
+    "reversed_numbers": 0
+   },
+   "letter|scan": {
+    "cer": 0.3149,
+    "word_precision": 0.532,
+    "word_recall": 0.496,
+    "word_f1": 0.514,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 1,
+    "reversed_numbers": 0
+   },
+   "letter|qa": [
+    true,
+    false,
+    true,
+    false
+   ],
+   "statement|clean": {
+    "cer": 0.1672,
+    "word_precision": 0.773,
+    "word_recall": 0.773,
+    "word_f1": 0.773,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 2,
+    "reversed_numbers": 0
+   },
+   "statement|scan": {
+    "cer": 0.5678,
+    "word_precision": 0.604,
+    "word_recall": 0.567,
+    "word_f1": 0.585,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 1,
+    "reversed_numbers": 0
+   },
+   "statement|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "procedure|clean": {
+    "cer": 0.2407,
+    "word_precision": 0.647,
+    "word_recall": 0.638,
+    "word_f1": 0.642,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 1,
+    "reversed_numbers": 0
+   },
+   "procedure|scan": {
+    "cer": 0.6774,
+    "word_precision": 0.285,
+    "word_recall": 0.27,
+    "word_f1": 0.277,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "procedure|qa": [
+    false,
+    true,
+    false,
+    false
+   ],
+   "pricelist|clean": {
+    "cer": 0.1899,
+    "word_precision": 0.647,
+    "word_recall": 0.64,
+    "word_f1": 0.643,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "pricelist|scan": {
+    "cer": 0.5506,
+    "word_precision": 0.188,
+    "word_recall": 0.174,
+    "word_f1": 0.181,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 17
+   },
+   "pricelist|qa": [
+    true,
+    false,
+    true
+   ],
+   "mixed|clean": {
+    "cer": 0.3947,
+    "word_precision": 0.5,
+    "word_recall": 0.489,
+    "word_f1": 0.494,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|scan": {
+    "cer": 0.2333,
+    "word_precision": 0.595,
+    "word_recall": 0.568,
+    "word_f1": 0.581,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "mixed|qa": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "niqqud|clean": {
+    "cer": 0.0323,
+    "word_precision": 0.871,
+    "word_recall": 0.871,
+    "word_f1": 0.871,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.4138
+   },
+   "niqqud|scan": {
+    "cer": 0.2581,
+    "word_precision": 0.355,
+    "word_recall": 0.355,
+    "word_f1": 0.355,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0,
+    "cer_with_niqqud": 0.4368
+   },
+   "niqqud|qa": [
+    true,
+    true
+   ],
+   "article|clean": {
+    "cer": 0.2332,
+    "word_precision": 0.513,
+    "word_recall": 0.487,
+    "word_f1": 0.5,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|scan": {
+    "cer": 0.3362,
+    "word_precision": 0.339,
+    "word_recall": 0.336,
+    "word_f1": 0.338,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "article|qa": [
+    true,
+    true,
+    false
+   ],
+   "smallprint|clean": {
+    "cer": 0.7976,
+    "word_precision": 0.111,
+    "word_recall": 0.111,
+    "word_f1": 0.111,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 115,
+    "reversed_numbers": 0
+   },
+   "smallprint|scan": {
+    "cer": 0.4464,
+    "word_precision": 0.345,
+    "word_recall": 0.333,
+    "word_f1": 0.339,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 1,
+    "reversed_numbers": 0
+   },
+   "smallprint|qa": [
+    true,
+    false,
+    true
+   ],
+   "receipt|clean": {
+    "cer": 0.5,
+    "word_precision": 0.737,
+    "word_recall": 0.724,
+    "word_f1": 0.73,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|scan": {
+    "cer": 0.0103,
+    "word_precision": 0.966,
+    "word_recall": 0.966,
+    "word_f1": 0.966,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "receipt|qa": [
+    true,
+    true,
+    true
+   ],
+   "note|clean": {
+    "cer": 0.1667,
+    "word_precision": 0.545,
+    "word_recall": 0.545,
+    "word_f1": 0.545,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|scan": {
+    "cer": 0.2011,
+    "word_precision": 0.548,
+    "word_recall": 0.515,
+    "word_f1": 0.531,
+    "foreign": false,
+    "truncated": false,
+    "reversed_words": 0,
+    "reversed_numbers": 0
+   },
+   "note|qa": [
+    true,
+    false
+   ]
+  },
+  "seconds_mean": 5.3
+ }
+}
